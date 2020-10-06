@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+<head>
+  <title>LuDi_Assignment4</title>
+  <!--semantic-ui 配置-->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+  <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+</head>
+
+<body>
+
+
+
+  <div class="ui borderless main menu fixed" style="position: fixed; top: 0px; left: auto; z-index: 10;">
+    <div class="ui text container">
+      <div class="header item">
+        LuDi' Assignment4
+      </div>
+    </div>
+  </div>
+
+
+  <div class="ui text container" style="margin-top: 80px;">
+    <h1>Welcome to HTML/CSS/JS play</h1>
+
+    <h2>Simple arithmetic operations</h2> 
+    <div class="ui input">
+      <input type="text"  id="input_x"  placeholder="input x...">
+    </div>
+    <div class="ui input">
+      <input type="text" id="input_y" placeholder="input y...">
+    </div>
+    <br>
+    
+    <button style="margin-top: 10px;" class="ui olive button" id="button_add">➕</button>
+    <button class="ui green button" id="button_minus">➖</button>
+    <button class="ui teal button" id="button_multi">✖️</button>
+    <button class="ui blue button" id="button_divide">➗</button>
+    <div class="ui text container">
+      <h3 id="result_xy" style="padding-top: 10px;">the result is...</h3>
+    </div>
+
+    <h2 id="text_code">CODING MAKES ME HAPPY!<br>CODING MAKES ME HAPPY!<br>CODING MAKES ME HAPPY!</h2> 
+    <button class="ui violet button" id="button_changecolor">click here to change text color
+    </button>
+  </div>
+</body>
+</html>
+
+<script>
+  $(document).ready(function(){
+    $("button#button_add").on('click',function(){
+      var x=parseFloat(document.getElementById("input_x").value);
+      var y=parseFloat(document.getElementById("input_y").value);
+      var r=x+y;
+      $("#result_xy").html("the result is"+" "+r);
+    });
+
+    $("button#button_minus").on('click',function(){
+      var x=parseFloat(document.getElementById("input_x").value);
+      var y=parseFloat(document.getElementById("input_y").value);
+      var r=x-y;
+      $("#result_xy").html("the result is"+" "+r);
+    });
+
+    $("button#button_multi").on('click',function(){
+      var x=parseFloat(document.getElementById("input_x").value);
+      var y=parseFloat(document.getElementById("input_y").value);
+      var r=x*y;
+      $("#result_xy").html("the result is"+" "+r);
+    });
+
+    $("button#button_divide").on('click',function(){
+      var x=parseFloat(document.getElementById("input_x").value);
+      var y=parseFloat(document.getElementById("input_y").value);
+      var r=x/y;
+      $("#result_xy").html("the result is"+" "+r);
+    });
+
+    $("button#button_changecolor").on('click',function(){
+      $("#text_code").css("color","pink");
+    });
+  });
+</script>
