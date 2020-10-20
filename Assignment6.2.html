@@ -1,0 +1,180 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+<head>
+  <title>LuDi_Assignment6</title>
+  <!--semantic-ui / bootstrap配置-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css'>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+  <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+
+  <style type="text/css">
+    body {
+      background-color: #FFFFFF;
+    }
+    .ui.menu .item img.logo {
+      margin-right: 1.5em;
+    }
+    .main.container {
+      margin-top: 7em;
+    }
+    .wireframe {
+      margin-top: 2em;
+    }
+    .ui.footer.segment {
+      margin: 5em 0em 0em;
+      padding: 5em 0em;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="ui fixed inverted menu">
+      <div class="ui container">
+        <a href="#" class="header item">
+          Courses
+        </a>
+        <a href="Assignment6.html" class="item">Home</a>
+        <div class="ui simple dropdown item">
+          Dropdown <i class="dropdown icon"></i>
+          <div class="menu">
+            <a class="item" href="#">Zoom Meetings</a>
+            <a class="item" href="#">My Courses</a>
+            <a class="item" href="#">Blogs</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="ui main text container" style="width: 80%;">
+      <div class="row">
+        <div class="col-sm-3">
+          <h3>Courses</h3>
+        </div>
+        <div class="col-sm-6">
+          <span>SORT BY
+          <div class="ui inline election dropdown">
+            <input type="hidden" name="gender">
+            <i class="dropdown icon"></i>
+            <div class="default text">Relsease date(newest first)</div>
+            <div class="menu">
+              <div class="item" data-value="0">Relsease date(newest first)</div>
+              <div class="item" data-value="1">Relsease date(oldest first)</div>
+              <div class="item" data-value="2">Popular(most viewed)</div>
+            </div>
+          </span>
+          </div>
+        </div>
+        
+      </div>
+      
+
+      
+
+      <div class="ui special cards" style="padding-top: 20px;">
+
+        <div class="card" style="height: fit-content;">
+          <div class="blurring dimmable image">
+            <div class="ui dimmer">
+              <div class="content">
+                <div class="center">
+                  <div class="ui inverted button">Preview this Course</div>
+                </div>
+              </div>
+            </div>
+            <img src="c1.jpg">
+          </div>
+          <div class="content">
+            <span class="header">New Media Business Model and Innovation</span>
+            <div class="meta">
+              <span class="date">Application Development</span>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="card" style="height: fit-content;">
+          <div class="blurring dimmable image">
+            <div class="ui inverted dimmer">
+              <div class="content">
+                <div class="center">
+                  <div class="ui primary button">Preview this Course</div>
+                </div>
+              </div>
+            </div>
+            <img src="c2.jpg">
+          </div>
+          <div class="content">
+            <span class="header">Data and Stories for Social Engagement</span>
+            <div class="meta">
+              <span class="date">Social Innovation</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" style="height: fit-content;">
+          <div class="blurring dimmable image">
+            <div class="ui inverted dimmer">
+              <div class="content">
+                <div class="center">
+                  <div class="ui inverted button">Preview this Course</div>
+                </div>
+              </div>
+            </div>
+            <img src="c3.jpg">
+          </div>
+          <div class="content">
+            <span class="header">Hacking COVID-19 Using Design & Coding Tools</span>
+            <div class="meta">
+              <span class="date">Application Development</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" style="height: fit-content;">
+          <div class="blurring dimmable image">
+            <div class="ui inverted dimmer">
+              <div class="content">
+                <div class="center">
+                  <div class="ui primary button">Preview this Course</div>
+                </div>
+              </div>
+            </div>
+            <img src="c4.jpg">
+          </div>
+          <div class="content">
+            <span class="header">Data Driven Product and Service Design</span>
+            <div class="meta">
+              <span class="date">Application Development</span>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+
+      </div>
+    </div>
+
+  
+
+
+
+
+  </div>
+
+</body>
+</html>
+
+<script>
+  $(document).ready(function(){
+  $('.ui.dropdown').dropdown();
+  
+  $('.special.cards .image').dimmer({
+  on: 'hover'});
+    
+  });
+</script>
