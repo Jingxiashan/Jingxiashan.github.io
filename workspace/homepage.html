@@ -1,0 +1,672 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<head>
+  <title>牛牛&自习室 - 让学习变成一件快乐的事情</title>
+  <!--semantic-ui / bootstrap配置-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css'>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+  <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+
+  <script>
+    $(document)
+      .ready(function() {
+
+
+        $('.ui.rating')
+        .rating('disable');
+
+        $('.special.cards .image').dimmer({
+        on: 'hover'});
+
+  
+        // fix menu when passed
+        $('.masthead')
+          .visibility({
+            once: false,
+            onBottomPassed: function() {
+              $('.fixed.menu').transition('fade in');
+            },
+            onBottomPassedReverse: function() {
+              $('.fixed.menu').transition('fade out');
+            }
+          })
+        ;
+  
+        // create sidebar and attach to menu open
+        $('.ui.sidebar')
+          .sidebar('attach events', '.toc.item')
+        ;
+  
+      })
+    ;
+    </script>
+
+
+  <style type="text/css">
+    #allmap{width:100%;height:500px;}
+
+    .hidden.menu {
+      display: none;
+    }
+
+    .masthead.segment {
+      min-height: 700px;
+      padding: 1em 0em;
+    }
+    .masthead .logo.item img {
+      margin-right: 1em;
+    }
+    .masthead .ui.menu .ui.button {
+      margin-left: 0.5em;
+    }
+    .masthead h1.ui.header {
+      margin-top: 3em;
+      margin-bottom: 0em;
+      font-size: 4em;
+      font-weight: normal;
+    }
+    .masthead h2 {
+      font-size: 1.7em;
+      font-weight: normal;
+    }
+
+    .ui.vertical.stripe {
+      padding: 8em 0em;
+    }
+    .ui.vertical.stripe h3 {
+      font-size: 2em;
+    }
+    .ui.vertical.stripe .button + h3,
+    .ui.vertical.stripe p + h3 {
+      margin-top: 3em;
+    }
+    .ui.vertical.stripe .floated.image {
+      clear: both;
+    }
+    .ui.vertical.stripe p {
+      font-size: 1.33em;
+    }
+    .ui.vertical.stripe .horizontal.divider {
+      margin: 3em 0em;
+    }
+
+    .quote.stripe.segment {
+      padding: 0em;
+    }
+    .quote.stripe.segment .grid .column {
+      padding-top: 5em;
+      padding-bottom: 5em;
+    }
+
+    .footer.segment {
+      padding: 5em 0em;
+    }
+
+    .secondary.pointing.menu .toc.item {
+      display: none;
+    }
+
+    @media only screen and (max-width: 700px) {
+      .ui.fixed.menu {
+        display: none !important;
+      }
+      .secondary.pointing.menu .item,
+      .secondary.pointing.menu .menu {
+        display: none;
+      }
+      .secondary.pointing.menu .toc.item {
+        display: block;
+      }
+      .masthead.segment {
+        min-height: 350px;
+      }
+      .masthead h1.ui.header {
+        font-size: 2em;
+        margin-top: 1.5em;
+      }
+      .masthead h2 {
+        margin-top: 0.5em;
+        font-size: 1.5em;
+      }
+    }
+
+    @font-face {
+    font-family:fzdbs;
+    src: url(FZDBSJW.TTF)}
+
+    @font-face {
+    font-family:fzdbs2;
+    src: url(FZLTCXHJW.TTF)}
+
+  </style>
+
+
+
+</head>
+
+<body>
+  <div class="ui large top fixed hidden menu">
+    <div class="ui container">
+      <div class="ui header" style="border: transparent;font-family: fzdbs; margin-top: 10px;">牛牛&自习室</div>
+      <div class="right menu">
+        <a class="item">主页</a>
+        <a class="item" onclick="gotofindssd()">精选自习室</a>
+        <a class="item"  onclick="gotofindpsrssd()">个性化推荐</a>
+        <a class="item" onclick="gotofindmapssd()">自习室地图</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sidebar Menu -->
+  <div class="ui vertical inverted sidebar menu" style="background-color:transparent;">
+    <a class="active item">主页</a>
+    <a class="item" onclick="gotofindssd()">精选自习室</a>
+    <a class="item" onclick="gotofindpsrssd()">个性化推荐</a>
+    <a class="item" onclick="gotofindmapssd()">自习室地图</a>
+  </div>
+
+  <div class="pusher">
+    <div class="ui inverted vertical masthead center aligned segment"  style="background-image: url(pic/bg1.jpg); background-size: 1440px 800px;opacity: 0.9;height: 800px;">
+      <div class="ui container">
+        <div class="ui large secondary inverted pointing menu" style="border: transparent;">
+          <a class="item"><h2 style="font-family: fzdbs;">牛牛&自习室</h2></a>
+          <div class="right item">
+            <a class="toc item">
+              <i class="sidebar icon"></i>
+            </a>
+            <a class="active item">主页</a>
+            <a class="item" onclick="gotofindssd()">精选自习室</a>
+            <a class="item" onclick="gotofindpsrssd()">个性化推荐</a>
+            <a class="item" onclick="gotofindmapssd()">自习室地图</a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="ui text container">
+        <h1 class="ui inverted header" style="font-family:fzdbs;">
+          牛牛 & 自习室
+        </h1>
+        <h2 style="font-family: fzdbs;">让学习变成一件享受的事情～</h2>
+        <div style="padding-top: 40px;">
+          <button class="ui inverted button" id="button_findssd" onclick="gotofindssd()"><h4>查找自习室</h4></button>
+          <a href="ppboard.html" class="ui inverted button"><h4>查找学习伙伴</h4></a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="ui vertical stripe segment" id="view_findssd">
+      <div class="ui center aligned stackable grid container">
+          <div class="row">
+            <div class="center aligned column">
+              <h3 class="ui header" style="font-family: fzdbs;">- 精选自习室 -</h3>
+              <p style="font-family: fzdbs;">巴拉巴拉点击一下这些事description部分</p>
+            </div>
+          </div>
+
+          <div class="ui link cards">     
+            <div class="card">
+              <div class="image">
+                <img src="pic/bg1.jpg">
+              </div>
+              <div class="content">
+                <div class="header" style="font-family: fzdbs;">推荐清单1</div>
+                <div class="description">这是一个非常牛逼的清单哦～</div>
+                <div style="padding-top: 20px;">
+                  <button class="ui brown basic button">立即查看</button>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="image">
+                <img src="pic/bg1.jpg">
+              </div>
+              <div class="content">
+                <div class="header" style="font-family: fzdbs;">推荐清单1</div>
+                <div class="description">这是一个非常牛逼的清单哦～</div>
+                <div style="padding-top: 20px;">
+                  <button class="ui brown basic button">立即查看</button>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="image">
+                <img src="pic/bg1.jpg">
+              </div>
+              <div class="content">
+                <div class="header" style="font-family: fzdbs;">推荐清单1</div>
+                <div class="description">这是一个非常牛逼的清单哦～</div>
+                <div style="padding-top: 20px;">
+                  <button class="ui brown basic button">立即查看</button>
+                </div>
+              </div>
+            </div>     
+          </div>  
+      </div>
+
+      <div class="ui center aligned stackable grid container" style="margin-top: 120px;">
+        <div class="row">
+          <div class="center aligned column" id="view_psrecommendation">
+            <h3 class="ui header" style="font-family: fzdbs;" id="title_recommendation">- 个性化推荐 -</h3>
+            <p style="font-family: fzdbs;">巴拉巴拉点击一下这些事description部分</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="center aligned column">
+            <div class="ui horizontal bulleted link list" id="selection_recommendationtype">
+              <a class="active item" style="font-size: 18px; font-family: fzdbs;" id="button_shuangrenzixi">双人自习</a>
+              <a class="item" style="font-size: 18px; font-family: fzdbs;" id="button_keyitongxiao" onclick="keyitongxiao()">可以通宵</a>
+              <a class="item" style="font-size: 18px; font-family: fzdbs;">可以吃饭</a>
+            </div>            
+          </div>
+        </div>
+
+        <!-- 精选推荐 卡片 默认显示双人自习-->
+        <div class="ui special cards" id="cards_recommendation_default" style="margin-top: 20px;">
+               <div class="card" style="width: 350px;">
+            <div class="blurring dimmable image">
+              <div class="ui dimmer">
+                <div class="content">
+                  <div class="center">
+                    <div class="ui inverted button">查看详情</div>
+                  </div>
+                </div>
+              </div>
+              <img src="pic/bg1.jpg">
+            </div>
+            <div class="left aligned content">
+              <div style="font-size: 18px; font-family: fzdbs;">老母猪自习室
+                <div class="ui mini blue tag label">新店优惠</div>
+                <div class="ui mini teal tag label">精选</div>
+              </div>
+              <div style="margin-top: 10px;margin-bottom: 10px;">
+                <div class="ui gray basic label" style="color: #656d72;">双人桌</div>
+                <div class="ui gray basic label" style="color: #656d72;">自助打印</div>
+                <div class="ui gray basic label" style="color: #656d72;">有朗读间</div>
+                <div class="ui gray basic label" style="color: #656d72;">有就餐区域</div>
+              </div>
+              <div class="meta">
+                <div style="font-family: fzdbs;color: #3b3e41;">地址：东城区&nbsp;&nbsp;<div class="ui tiny label">人均 23元</div></div>
+                <span class="date" style="font-size: 13px;">非常干净非常干净非常干净非常干净非常干净非常干净非常干净非常干净</span>
+              </div>
+            </div>
+            <div class="extra content">
+              推荐指数：<div class="ui star rating" data-rating="2"></div>
+            </div>
+              </div>
+
+          <div class="card" style="width: 350px;">
+            <div class="blurring dimmable image">
+              <div class="ui dimmer">
+                <div class="content">
+                  <div class="center">
+                    <div class="ui inverted button">查看详情</div>
+                  </div>
+                </div>
+              </div>
+              <img src="pic/bg1.jpg">
+            </div>
+            <div class="left aligned content">
+              <div style="font-size: 18px; font-family: fzdbs;">老母猪自习室
+                <div class="ui mini blue tag label">新店优惠</div>
+                <div class="ui mini teal tag label">精选</div>
+              </div>
+              <div style="margin-top: 10px;margin-bottom: 10px;">
+                <div class="ui gray basic label" style="color: #656d72;">双人桌</div>
+                <div class="ui gray basic label" style="color: #656d72;">自助打印</div>
+                <div class="ui gray basic label" style="color: #656d72;">有朗读间</div>
+                <div class="ui gray basic label" style="color: #656d72;">有就餐区域</div>
+              </div>
+              <div class="meta">
+                <div style="font-family: fzdbs;color: #3b3e41;">地址：东城区&nbsp;&nbsp;<div class="ui tiny label">人均 23元</div></div>
+                <span class="date" style="font-size: 13px;">非常干净非常干净非常干净非常干净非常干净非常干净非常干净非常干净</span>
+              </div>
+            </div>
+            <div class="extra content">
+              推荐指数：<div class="ui star rating" data-rating="2"></div>
+            </div>
+          </div>
+
+          <div class="card" style="width: 350px;">
+            <div class="blurring dimmable image">
+              <div class="ui dimmer">
+                <div class="content">
+                  <div class="center">
+                    <div class="ui inverted button">查看详情</div>
+                  </div>
+                </div>
+              </div>
+              <img src="pic/bg1.jpg">
+            </div>
+            <div class="left aligned content">
+              <div style="font-size: 18px; font-family: fzdbs;">老母猪自习室
+                <div class="ui mini blue tag label">新店优惠</div>
+                <div class="ui mini teal tag label">精选</div>
+              </div>
+              <div style="margin-top: 10px;margin-bottom: 10px;">
+                <div class="ui gray basic label" style="color: #656d72;">双人桌</div>
+                <div class="ui gray basic label" style="color: #656d72;">自助打印</div>
+                <div class="ui gray basic label" style="color: #656d72;">有朗读间</div>
+                <div class="ui gray basic label" style="color: #656d72;">有就餐区域</div>
+              </div>
+              <div class="meta">
+                <div style="font-family: fzdbs;color: #3b3e41;">地址：东城区</div>
+                <span class="date" style="font-size: 13px;">非常干净非常干净非常干净非常干净非常干净非常干净非常干净非常干净</span>
+              </div>
+            </div>
+            <div class="extra content">
+              推荐指数：<div class="ui star rating" data-rating="2"></div>
+            </div>
+          </div>
+
+          <div class="card" style="width: 350px;">
+            <div class="blurring dimmable image">
+              <div class="ui dimmer">
+                <div class="content">
+                  <div class="center">
+                    <div class="ui inverted button">查看详情</div>
+                  </div>
+                </div>
+              </div>
+              <img src="pic/bg1.jpg">
+            </div>
+            <div class="left aligned content">
+              <div style="font-size: 18px; font-family: fzdbs;">老母猪自习室
+                <div class="ui mini blue tag label">新店优惠</div>
+                <div class="ui mini teal tag label">精选</div>
+              </div>
+              <div style="margin-top: 10px;margin-bottom: 10px;">
+                <div class="ui gray basic label" style="color: #656d72;">双人桌</div>
+                <div class="ui gray basic label" style="color: #656d72;">自助打印</div>
+                <div class="ui gray basic label" style="color: #656d72;">有朗读间</div>
+                <div class="ui gray basic label" style="color: #656d72;">有就餐区域</div>
+              </div>
+              <div class="meta">
+                <div style="font-family: fzdbs;color: #3b3e41;">地址：东城区</div>
+                <span class="date" style="font-size: 13px;">非常干净非常干净非常干净非常干净非常干净非常干净非常干净非常干净</span>
+              </div>
+            </div>
+            <div class="extra content">
+              推荐指数：<div class="ui star rating" data-rating="2"></div>
+            </div>
+          </div>
+
+          <div class="card" style="width: 350px;">
+            <div class="blurring dimmable image">
+              <div class="ui dimmer">
+                <div class="content">
+                  <div class="center">
+                    <div class="ui inverted button">查看详情</div>
+                  </div>
+                </div>
+              </div>
+              <img src="pic/bg1.jpg">
+            </div>
+            <div class="left aligned content">
+              <div style="font-size: 18px; font-family: fzdbs;">老母猪自习室
+                <div class="ui mini blue tag label">新店优惠</div>
+                <div class="ui mini teal tag label">精选</div>
+              </div>
+              <div style="margin-top: 10px;margin-bottom: 10px;">
+                <div class="ui gray basic label" style="color: #656d72;">双人桌</div>
+                <div class="ui gray basic label" style="color: #656d72;">自助打印</div>
+                <div class="ui gray basic label" style="color: #656d72;">有朗读间</div>
+                <div class="ui gray basic label" style="color: #656d72;">有就餐区域</div>
+              </div>
+              <div class="meta">
+                <div style="font-family: fzdbs;color: #3b3e41;">地址：东城区</div>
+                <span class="date" style="font-size: 13px;">非常干净非常干净非常干净非常干净非常干净非常干净非常干净非常干净</span>
+              </div>
+            </div>
+            <div class="extra content">
+              推荐指数：<div class="ui star rating" data-rating="2"></div>
+            </div>
+          </div>
+
+          <div class="card" style="width: 350px;">
+            <div class="blurring dimmable image">
+              <div class="ui dimmer">
+                <div class="content">
+                  <div class="center">
+                    <div class="ui inverted button">查看详情</div>
+                  </div>
+                </div>
+              </div>
+              <img src="pic/bg1.jpg">
+            </div>
+            <div class="left aligned content">
+              <div style="font-size: 18px; font-family: fzdbs;">老母猪自习室
+                <div class="ui mini blue tag label">新店优惠</div>
+                <div class="ui mini teal tag label">精选</div>
+              </div>
+              <div style="margin-top: 10px;margin-bottom: 10px;">
+                <div class="ui gray basic label" style="color: #656d72;">双人桌</div>
+                <div class="ui gray basic label" style="color: #656d72;">自助打印</div>
+                <div class="ui gray basic label" style="color: #656d72;">有朗读间</div>
+                <div class="ui gray basic label" style="color: #656d72;">有就餐区域</div>
+              </div>
+              <div class="meta">
+                <div style="font-family: fzdbs;color: #3b3e41;">地址：东城区</div>
+                <span class="date" style="font-size: 13px;">非常干净非常干净非常干净非常干净非常干净非常干净非常干净非常干净</span>
+              </div>
+            </div>
+            <div class="extra content">
+              推荐指数：<div class="ui star rating" data-rating="2"></div>
+            </div>
+          </div>
+
+        </div>
+        <!-- 精选推荐 卡片 默认显示双人自习--> 
+        <div class="ui special cards" id="cards-recommendation" style="margin-top: 20px;">
+          <div class="card" style="width: 350px;"><div class="blurring dimmable image"><div class="ui dimmer">
+            <div class="content"><div class="center"><div class="ui inverted button">查看详情</div></div></div></div><img src="pic/bg1.jpg">
+            </div><div class="left aligned content"><div style="font-size: 18px; font-family: fzdbs;">老母猪自习室<div class="ui mini blue tag label">新店优惠</div>
+            <div class="ui mini teal tag label">精选</div></div><div style="margin-top: 10px;margin-bottom: 10px;">
+            <div class="ui gray basic label" style="color: #656d72;">双人桌</div><div class="ui gray basic label" style="color: #656d72;">自助打印</div>
+            <div class="ui gray basic label" style="color: #656d72;">有朗读间</div><div class="ui gray basic label" style="color: #656d72;">有就餐区域</div></div>
+            <div class="meta"><div style="font-family: fzdbs;color: #3b3e41;">地址：东城区</div><span class="date" style="font-size: 13px;">非常干净非常干净非常干净非常干净非常干净非常干净非常干净非常干净</span>
+            </div></div> <div class="extra content">推荐指数：<div class="ui star rating" data-rating="2"></div></div></div>;
+        </div>
+      </div>
+
+      <div class="ui center aligned stackable grid container" style="margin-top: 120px;" id="view_mapssd">
+        <div class="row">
+          <div class="center aligned column">
+            <h3 class="ui header" style="font-family: fzdbs;">- 自习室地图 -</h3>
+            <p style="font-family: fzdbs;">巴拉巴拉点击一下这些事description部分</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="center aligned column">
+            <div class="ui horizontal bulleted link list">
+              <a class="active item" style="font-size: 15px; font-family: fzdbs;">东城区</a>
+              <a class="item" style="font-size: 15px; font-family: fzdbs;">西城区</a>
+              <a class="item" style="font-size: 15px; font-family: fzdbs;">朝阳区</a>
+              <a class="item" style="font-size: 15px; font-family: fzdbs;">丰台区</a>
+              <a class="item" style="font-size: 15px; font-family: fzdbs;">石景山区</a>
+              <a class="item" style="font-size: 15px; font-family: fzdbs;">海淀区</a>
+              <a class="item" style="font-size: 15px; font-family: fzdbs;">顺义区</a>
+            </div>            
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="center aligned column">
+            <div class="ui horizontal bulleted link list">
+              <a class="item" style="font-size: 15px; font-family: fzdbs;">通州区</a>
+              <a class="item" style="font-size: 15px; font-family: fzdbs;">大兴区</a>
+              <a class="item" style="font-size: 15px; font-family: fzdbs;">房山区</a>
+              <a class="item" style="font-size: 15px; font-family: fzdbs;">门头沟区</a>
+              <a class="item" style="font-size: 15px; font-family: fzdbs;">昌平区</a>
+              <a class="item" style="font-size: 15px; font-family: fzdbs;">平谷区</a>
+              <a class="item" style="font-size: 15px; font-family: fzdbs;">密云区</a>
+              <a class="item" style="font-size: 15px; font-family: fzdbs;">怀柔区</a>
+              <a class="item" style="font-size: 15px; font-family: fzdbs;">延庆区</a>
+            </div>            
+          </div>
+        </div>
+
+        <div class="ui special cards" style="margin-top: 20px;">
+          <div class="card" style="width: 350px;">
+            <div class="blurring dimmable image">
+              <div class="ui dimmer">
+                <div class="content">
+                  <div class="center">
+                    <div class="ui inverted button">查看详情</div>
+                  </div>
+                </div>
+              </div>
+              <img src="pic/bg1.jpg">
+            </div>
+            <div class="left aligned content">
+              <div style="font-size: 18px; font-family: fzdbs;">老母猪自习室
+                <div class="ui mini blue tag label">新店优惠</div>
+                <div class="ui mini teal tag label">精选</div>
+              </div>
+              <div style="margin-top: 10px;margin-bottom: 10px;">
+                <div class="ui gray basic label" style="color: #656d72;">双人桌</div>
+                <div class="ui gray basic label" style="color: #656d72;">自助打印</div>
+                <div class="ui gray basic label" style="color: #656d72;">有朗读间</div>
+                <div class="ui gray basic label" style="color: #656d72;">有就餐区域</div>
+              </div>
+              <div class="meta">
+                <div style="font-family: fzdbs;color: #3b3e41;">地址：东城区</div>
+                <span class="date" style="font-size: 13px;">非常干净非常干净非常干净非常干净非常干净非常干净非常干净非常干净</span>
+              </div>
+            </div>
+            <div class="extra content">
+              推荐指数：<div class="ui star rating" data-rating="2"></div>
+            </div>
+          </div>
+
+          <div class="card" style="width: 350px;">
+            <div class="blurring dimmable image">
+              <div class="ui dimmer">
+                <div class="content">
+                  <div class="center">
+                    <div class="ui inverted button">查看详情</div>
+                  </div>
+                </div>
+              </div>
+              <img src="pic/bg1.jpg">
+            </div>
+            <div class="left aligned content">
+              <div style="font-size: 18px; font-family: fzdbs;">老母猪自习室
+                <div class="ui mini blue tag label">新店优惠</div>
+                <div class="ui mini teal tag label">精选</div>
+              </div>
+              <div style="margin-top: 10px;margin-bottom: 10px;">
+                <div class="ui gray basic label" style="color: #656d72;">双人桌</div>
+                <div class="ui gray basic label" style="color: #656d72;">自助打印</div>
+                <div class="ui gray basic label" style="color: #656d72;">有朗读间</div>
+                <div class="ui gray basic label" style="color: #656d72;">有就餐区域</div>
+              </div>
+              <div class="meta">
+                <div style="font-family: fzdbs;color: #3b3e41;">地址：东城区</div>
+                <span class="date" style="font-size: 13px;">非常干净非常干净非常干净非常干净非常干净非常干净非常干净非常干净</span>
+              </div>
+            </div>
+            <div class="extra content">
+              推荐指数：<div class="ui star rating" data-rating="2"></div>
+            </div>
+          </div>
+
+          <div class="card" style="width: 350px;">
+            <div class="blurring dimmable image">
+              <div class="ui dimmer">
+                <div class="content">
+                  <div class="center">
+                    <div class="ui inverted button">查看详情</div>
+                  </div>
+                </div>
+              </div>
+              <img src="pic/bg1.jpg">
+            </div>
+            <div class="left aligned content">
+              <div style="font-size: 18px; font-family: fzdbs;">老母猪自习室
+                <div class="ui mini blue tag label">新店优惠</div>
+                <div class="ui mini teal tag label">精选</div>
+              </div>
+              <div style="margin-top: 10px;margin-bottom: 10px;">
+                <div class="ui gray basic label" style="color: #656d72;">双人桌</div>
+                <div class="ui gray basic label" style="color: #656d72;">自助打印</div>
+                <div class="ui gray basic label" style="color: #656d72;">有朗读间</div>
+                <div class="ui gray basic label" style="color: #656d72;">有就餐区域</div>
+              </div>
+              <div class="meta">
+                <div style="font-family: fzdbs;color: #3b3e41;">地址：东城区</div>
+                <span class="date" style="font-size: 13px;">非常干净非常干净非常干净非常干净非常干净非常干净非常干净非常干净</span>
+              </div>
+            </div>
+            <div class="extra content">
+              推荐指数：<div class="ui star rating" data-rating="2"></div>
+            </div>
+          </div>
+
+
+        </div>
+
+      </div>
+
+
+    </div>
+  </div>
+
+
+  <div class="ui inverted vertical footer segment">
+    <div class="ui container">
+      <div class="ui stackable inverted divided equal height stackable grid">
+        <div class="three wide column">
+          <h4 class="ui inverted header">About</h4>
+          <div class="ui inverted link list">
+            <a href="#" class="item">Sitemap</a>
+            <a href="#" class="item">Contact Us</a>
+          </div>
+        </div>
+        <div class="seven wide column">
+          <h4 class="ui inverted header">DESIGN & CODE</h4>
+          <p>Literacy and Skills for 21st Century Talents</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
+
+<script>
+  function gotofindssd(){
+    document.getElementById("view_findssd").scrollIntoView();
+  };
+  function gotofindpsrssd(){
+    document.getElementById("view_psrecommendation").scrollIntoView();
+  };
+  function gotofindmapssd(){
+    document.getElementById("view_mapssd").scrollIntoView();
+  };
+  function keyitongxiao(){
+    document.getElementById('cards_recommendation_default').style.display="none";
+    document.getElementById('button_keyitongxiao').className="active item";
+    document.getElementById('button_shuangrenzixi').className="item";
+    var text='<div class="card" style="width: 350px;">'+'<div class="blurring dimmable image">'+'<div class="ui dimmer">'+
+          '<div class="content"><div class="center"><div class="ui inverted button">查看详情</div></div></div></div><img src="pic/bg1.jpg">'+
+          '</div><div class="left aligned content"><div style="font-size: 18px; font-family: fzdbs;">老母猪自习室<div class="ui mini blue tag label">新店优惠</div>'+
+          '<div class="ui mini teal tag label">精选</div></div><div style="margin-top: 10px;margin-bottom: 10px;">'+
+          '<div class="ui gray basic label" style="color: #656d72;">双人桌</div><div class="ui gray basic label" style="color: #656d72;">自助打印</div>'+
+          '<div class="ui gray basic label" style="color: #656d72;">有朗读间</div><div class="ui gray basic label" style="color: #656d72;">有就餐区域</div></div>'+
+          '<div class="meta"><div style="font-family: fzdbs;color: #3b3e41;">地址：东城区 &nbsp;&nbsp;<div class="ui tiny label">人均 23元</div></div><span class="date" style="font-size: 13px;">非常干净非常干净非常干净非常干净非常干净非常干净非常干净非常干净</span>'+
+          '</div></div> <div class="extra content">推荐指数：<div class="ui star rating" data-rating="2"></div></div></div>;';
+            document.getElementById("cards-recommendation").innerHTML=text;
+            
+          $('.ui.rating')
+        .rating('disable');
+
+          $('.special.cards .image').dimmer({
+        on: 'hover'});
+   
+    };
+</script>
