@@ -319,6 +319,31 @@
             </div>
           </div>
 
+          <div class="card" style="width: 350px;"><div class="blurring dimmable image"><div class="ui dimmer">
+            <div class="content"><div class="center"><a href="yc-ssd.html" class="ui inverted button">查看详情</a></div></div></div><img src="pic/yc-t.JPG">
+            </div><div class="left aligned content"><div style="font-size: 18px; font-family: fzdbs;">洋葱自习室
+            <div class="ui mini teal tag label">精选</div></div><div style="margin-top: 10px;margin-bottom: 10px;">
+              <div class="ui gray basic label" style="color: #656d72;">双人桌</div><div class="ui gray basic label" style="color: #656d72;">自助打印</div>
+              <div class="ui gray basic label" style="color: #656d72;">可以吃饭</div><div class="ui gray basic label" style="color: #656d72;">有朗读间</div></div>
+            <div class="meta"><div style="font-family: fzdbs;color: #3b3e41;">地址：丰台区 &nbsp;&nbsp;<div class="ui tiny label">4h体验卡：20元</div></div><span class="date" style="font-size: 13px;">“一家非常有特色且有实际意义的自习室哦”</span>
+            </div></div> <div class="extra content">推荐指数：<div class="ui star rating" data-rating="5" data-max-rating="5"></div></div></div>
+
+            <div class="card" style="width: 350px;"><div class="blurring dimmable image"><div class="ui dimmer">
+              <div class="content"><div class="center"><a href="aa-ssd.html" class="ui inverted button">查看详情</a></div></div></div><img src="pic/aa-t.JPG">
+              </div><div class="left aligned content"><div style="font-size: 18px; font-family: fzdbs;">AA自习室
+              <div class="ui mini teal tag label">精选</div></div><div style="margin-top: 10px;margin-bottom: 10px;">
+              <div class="ui gray basic label" style="color: #656d72;">双人桌</div><div class="ui gray basic label" style="color: #656d72;">有就餐区域</div></div>
+              <div class="meta"><div style="font-family: fzdbs;color: #3b3e41;">地址：大兴区 &nbsp;&nbsp;<div class="ui tiny label">月卡：588元</div></div><span class="date" style="font-size: 13px;">“喜欢有帘子的设计，座位也很宽敞”</span>
+              </div></div> <div class="extra content">推荐指数：<div class="ui star rating" data-rating="5" data-max-rating="5"></div></div></div>
+
+              <div class="card" style="width: 350px;"><div class="blurring dimmable image"><div class="ui dimmer">
+                <div class="content"><div class="center"><a href="j-ssd.html" class="ui inverted button">查看详情</a></div></div></div><img src="pic/j-t.JPG">
+                </div><div class="left aligned content"><div style="font-size: 18px; font-family: fzdbs;">茧·自习室
+                <div class="ui mini blue tag label">新店优惠</div><div class="ui mini teal tag label">精选</div></div><div style="margin-top: 10px;margin-bottom: 10px;">
+                <div class="ui gray basic label" style="color: #656d72;">自助打印</div><div class="ui gray basic label" style="color: #656d72;">双人桌</div></div>
+                <div class="meta"><div style="font-family: fzdbs;color: #3b3e41;">地址：昌平区 &nbsp;&nbsp;<div class="ui tiny label">2h体验卡：9.9元</div></div><span class="date" style="font-size: 13px;">“细心的店家还准备好多棒棒糖哦”</span>
+                </div></div> <div class="extra content">推荐指数：<div class="ui star rating" data-rating="5" data-max-rating="5"></div></div></div>
+
         </div>
         <!-- 精选推荐 卡片 默认显示双人自习--> 
         <div class="ui special cards" id="cards-recommendation" style="margin-top: 20px;">
@@ -336,34 +361,37 @@
         <div class="row">
           <div class="center aligned column">
             <div class="ui horizontal bulleted link list">
-              <a class="active item" style="font-size: 15px; font-family: fzdbs;">东城区</a>
-              <a class="item" style="font-size: 15px; font-family: fzdbs;">西城区</a>
-              <a class="item" style="font-size: 15px; font-family: fzdbs;">朝阳区</a>
-              <a class="item" style="font-size: 15px; font-family: fzdbs;">丰台区</a>
-              <a class="item" style="font-size: 15px; font-family: fzdbs;">石景山区</a>
-              <a class="item" style="font-size: 15px; font-family: fzdbs;">海淀区</a>
-              <a class="item" style="font-size: 15px; font-family: fzdbs;">顺义区</a>
+              <a class="active item" style="font-size: 15px; font-family: fzdbs;" id="button_chaoyang" onclick="gotochaoyang()">朝阳区</a>
+              <a class="item" style="font-size: 15px; font-family: fzdbs;" id="button_fengtai" onclick="gotofengtai()">丰台区</a>
+              <a class="item" style="font-size: 15px; font-family: fzdbs;" id="button_daxing" onclick="gotodaxing()">大兴区</a>
+              <a class="item" style="font-size: 15px; font-family: fzdbs;" id="button_shijingshan" onclick="gotoshijingshan()">石景山区</a>
+              <a class="item" style="font-size: 15px; font-family: fzdbs;" id="button_haidian" onclick="gotohaidian()">海淀区</a>
+              <a class="item" style="font-size: 15px; font-family: fzdbs;" id="button_changping" onclick="gotochangping()">昌平区</a>
             </div>            
           </div>
         </div>
 
-        <div class="row">
-          <div class="center aligned column">
-            <div class="ui horizontal bulleted link list">
-              <a class="item" style="font-size: 15px; font-family: fzdbs;">通州区</a>
-              <a class="item" style="font-size: 15px; font-family: fzdbs;">大兴区</a>
-              <a class="item" style="font-size: 15px; font-family: fzdbs;">房山区</a>
-              <a class="item" style="font-size: 15px; font-family: fzdbs;">门头沟区</a>
-              <a class="item" style="font-size: 15px; font-family: fzdbs;">昌平区</a>
-              <a class="item" style="font-size: 15px; font-family: fzdbs;">平谷区</a>
-              <a class="item" style="font-size: 15px; font-family: fzdbs;">密云区</a>
-              <a class="item" style="font-size: 15px; font-family: fzdbs;">怀柔区</a>
-              <a class="item" style="font-size: 15px; font-family: fzdbs;">延庆区</a>
-            </div>            
-          </div>
-        </div>
 
-        <div class="ui special cards" style="margin-top: 20px;">
+<!-- 自习室地图默认区域：朝阳区-->
+        <div class="ui special cards" style="margin-top: 20px;" id="view_mapdefault">
+
+          <div class="card" style="width: 350px;"><div class="blurring dimmable image"><div class="ui dimmer">
+            <div class="content"><div class="center"><a href="hq-ssd.html" class="ui inverted button">查看详情</a></div></div></div><img src="pic/hq-t.JPG">
+            </div><div class="left aligned content"><div style="font-size: 18px; font-family: fzdbs;">海雀自习室
+            <div class="ui mini teal tag label">精选</div></div><div style="margin-top: 10px;margin-bottom: 10px;">
+              <div class="ui gray basic label" style="color: #656d72;">双人桌</div><div class="ui gray basic label" style="color: #656d72;">自助打印</div>
+            <div class="ui gray basic label" style="color: #656d72;">可以通宵</div><div class="ui gray basic label" style="color: #656d72;">有朗读间</div></div>
+            <div class="meta"><div style="font-family: fzdbs;color: #3b3e41;">地址：朝阳区 &nbsp;&nbsp;<div class="ui tiny label">2h学习：35.8元</div></div><span class="date" style="font-size: 13px;">“一个沉浸式的自习室哦，老板也很不错”</span>
+            </div></div> <div class="extra content">推荐指数：<div class="ui star rating" data-rating="5" data-max-rating="5"></div></div></div>
+
+          <div class="card" style="width: 350px;"><div class="blurring dimmable image"><div class="ui dimmer">
+            <div class="content"><div class="center"><a href="lchxq-ssd.html" class="ui inverted button">查看详情</a></div></div></div><img src="pic/lchxq-t.JPG">
+            </div><div class="left aligned content"><div style="font-size: 18px; font-family: fzdbs;">六尺星球自习室
+            <div class="ui mini teal tag label">精选</div></div><div style="margin-top: 10px;margin-bottom: 10px;">
+              <div class="ui gray basic label" style="color: #656d72;">双人桌</div><div class="ui gray basic label" style="color: #656d72;">自助打印</div>
+              <div class="ui gray basic label" style="color: #656d72;">可以吃饭</div><div class="ui gray basic label" style="color: #656d72;">有朗读间</div></div>
+            <div class="meta"><div style="font-family: fzdbs;color: #3b3e41;">地址：朝阳区 &nbsp;&nbsp;<div class="ui tiny label">Box一日体验卡：69元</div></div><span class="date" style="font-size: 13px;">“一家非常有特色且有实际意义的自习室哦”</span>
+            </div></div> <div class="extra content">推荐指数：<div class="ui star rating" data-rating="5" data-max-rating="5"></div></div></div>
 
           <div class="card" style="width: 350px;"><div class="blurring dimmable image"><div class="ui dimmer">
             <div class="content"><div class="center"><a href="mf-ssd.html" class="ui inverted button">查看详情</a></div></div></div><img src="pic/mf-t.jpg">
@@ -383,10 +411,23 @@
             <div class="meta"><div style="font-family: fzdbs;color: #3b3e41;">地址：朝阳区 &nbsp;&nbsp;<div class="ui tiny label">1h体验卡：10元</div></div><span class="date" style="font-size: 13px;">“这次选择了开放区域，很喜欢她家的这种氛围”</span>
             </div></div> <div class="extra content">推荐指数：<div class="ui star rating" data-rating="5" data-max-rating="5"></div></div></div>
 
-
+            <div class="card" style="width: 350px;"><div class="blurring dimmable image"><div class="ui dimmer">
+              <div class="content"><div class="center"><a href="hx-ssd.html" class="ui inverted button">查看详情</a></div></div></div><img src="pic/hx-t.JPG">
+              </div><div class="left aligned content"><div style="font-size: 18px; font-family: fzdbs;">呼吸自习室
+                <div class="ui mini blue tag label">新店优惠</div><div class="ui mini teal tag label">精选</div></div><div style="margin-top: 10px;margin-bottom: 10px;">
+              <div class="ui gray basic label" style="color: #656d72;">有朗读间</div><div class="ui gray basic label" style="color: #656d72;">自助打印</div></div>
+              <div class="meta"><div style="font-family: fzdbs;color: #3b3e41;">地址：海淀区 &nbsp;&nbsp;<div class="ui tiny label">4h体验卡：29.9元</div></div><span class="date" style="font-size: 13px;">“不错的地方，老板小姐姐也很nice”</span>
+              </div></div> <div class="extra content">推荐指数：<div class="ui star rating" data-rating="4" data-max-rating="5"></div></div></div>
 
           
 
+
+        </div>
+
+
+
+<!-- 自习室地图 重绘部分-->
+        <div class="ui special cards" style="margin-top: 20px;" id="view_map">
 
         </div>
 
@@ -458,8 +499,18 @@
           '<div class="ui gray basic label" style="color: #656d72;">有朗读间</div><div class="ui gray basic label" style="color: #656d72;">有就餐区域</div></div>'+
           '<div class="meta"><div style="font-family: fzdbs;color: #3b3e41;">地址：朝阳区 &nbsp;&nbsp;<div class="ui tiny label">1h体验卡：10元</div></div><span class="date" style="font-size: 13px;">“这次选择了开放区域，很喜欢她家的这种氛围”</span>'+
           '</div></div> <div class="extra content">推荐指数：<div class="ui star rating" data-rating="5" data-max-rating="5"></div></div></div>';
+
+                //海雀自习室
+      var text4='   <div class="card" style="width: 350px;"><div class="blurring dimmable image"><div class="ui dimmer"> '+
+      ' <div class="content"><div class="center"><a href="hq-ssd.html" class="ui inverted button">查看详情</a></div></div></div><img src="pic/hq-t.JPG"> '+
+      '  </div><div class="left aligned content"><div style="font-size: 18px; font-family: fzdbs;">海雀自习室 '+
+      ' <div class="ui mini teal tag label">精选</div></div><div style="margin-top: 10px;margin-bottom: 10px;"> '+
+      ' <div class="ui gray basic label" style="color: #656d72;">双人桌</div><div class="ui gray basic label" style="color: #656d72;">自助打印</div> '+
+      '<div class="ui gray basic label" style="color: #656d72;">可以通宵</div><div class="ui gray basic label" style="color: #656d72;">有朗读间</div></div> '+
+      '<div class="meta"><div style="font-family: fzdbs;color: #3b3e41;">地址：朝阳区 &nbsp;&nbsp;<div class="ui tiny label">2h学习：35.8元</div></div><span class="date" style="font-size: 13px;">“一个沉浸式的自习室哦，老板也很不错”</span> '+
+      ' </div></div> <div class="extra content">推荐指数：<div class="ui star rating" data-rating="5" data-max-rating="5"></div></div></div> ';
   
-    document.getElementById("cards-recommendation").innerHTML=text1+text2+text3;
+    document.getElementById("cards-recommendation").innerHTML=text1+text2+text3+text4;
             
           $('.ui.rating')
         .rating('disable');
@@ -471,7 +522,7 @@
   function shuangrenzixi(){
     document.getElementById('cards_recommendation_default').style.display="none";
     document.getElementById('button_shuangrenzixi').className="item";
- 
+    //乐学空间自习室
     var text1='<div class="card" style="width: 350px;">'+'<div class="blurring dimmable image">'+'<div class="ui dimmer">'+
           '<div class="content"><div class="center"><a href="lxkj-ssd.html" class="ui inverted button">查看详情</a></div></div></div><img src="pic/lxkj-t.jpg">'+
           '</div><div class="left aligned content"><div style="font-size: 18px; font-family: fzdbs;">乐学空间自习室'+
@@ -498,8 +549,34 @@
           '<div class="ui gray basic label" style="color: #656d72;">有朗读间</div><div class="ui gray basic label" style="color: #656d72;">有就餐区域</div></div>'+
           '<div class="meta"><div style="font-family: fzdbs;color: #3b3e41;">地址：朝阳区 &nbsp;&nbsp;<div class="ui tiny label">1h体验卡：10元</div></div><span class="date" style="font-size: 13px;">“这次选择了开放区域，很喜欢她家的这种氛围”</span>'+
           '</div></div> <div class="extra content">推荐指数：<div class="ui star rating" data-rating="5" data-max-rating="5"></div></div></div>';
+      
+          //洋葱自习室
+       var   text4=      '       <div class="card" style="width: 350px;"><div class="blurring dimmable image"><div class="ui dimmer"> '+
+      ' <div class="content"><div class="center"><a href="yc-ssd.html" class="ui inverted button">查看详情</a></div></div></div><img src="pic/yc-t.JPG"> '+
+      '  </div><div class="left aligned content"><div style="font-size: 18px; font-family: fzdbs;">洋葱自习室 '+
+      ' <div class="ui mini teal tag label">精选</div></div><div style="margin-top: 10px;margin-bottom: 10px;"> '+
+      '  <div class="ui gray basic label" style="color: #656d72;">双人桌</div><div class="ui gray basic label" style="color: #656d72;">自助打印</div> '+
+      ' <div class="ui gray basic label" style="color: #656d72;">可以吃饭</div><div class="ui gray basic label" style="color: #656d72;">有朗读间</div></div> '+
+      ' <div class="meta"><div style="font-family: fzdbs;color: #3b3e41;">地址：丰台区 &nbsp;&nbsp;<div class="ui tiny label">4h体验卡：20元</div></div><span class="date" style="font-size: 13px;">“一家非常有特色且有实际意义的自习室哦”</span> '+
+      '  </div></div> <div class="extra content">推荐指数：<div class="ui star rating" data-rating="5" data-max-rating="5"></div></div></div> ';
+
+      var text5=   '         <div class="card" style="width: 350px;"><div class="blurring dimmable image"><div class="ui dimmer"> '+
+      ' <div class="content"><div class="center"><a href="aa-ssd.html" class="ui inverted button">查看详情</a></div></div></div><img src="pic/aa-t.JPG"> '+
+      '  </div><div class="left aligned content"><div style="font-size: 18px; font-family: fzdbs;">AA自习室 '+
+      ' <div class="ui mini teal tag label">精选</div></div><div style="margin-top: 10px;margin-bottom: 10px;"> '+
+      ' <div class="ui gray basic label" style="color: #656d72;">双人桌</div><div class="ui gray basic label" style="color: #656d72;">有就餐区域</div></div> '+
+      ' <div class="meta"><div style="font-family: fzdbs;color: #3b3e41;">地址：大兴区 &nbsp;&nbsp;<div class="ui tiny label">月卡：588元</div></div><span class="date" style="font-size: 13px;">“喜欢有帘子的设计，座位也很宽敞”</span> '+
+      ' </div></div> <div class="extra content">推荐指数：<div class="ui star rating" data-rating="5" data-max-rating="5"></div></div></div> ';
+
+      text6 =     '    <div class="card" style="width: 350px;"><div class="blurring dimmable image"><div class="ui dimmer"> '+
+      ' <div class="content"><div class="center"><a href="j-ssd.html" class="ui inverted button">查看详情</a></div></div></div><img src="pic/j-t.JPG"> '+
+      ' </div><div class="left aligned content"><div style="font-size: 18px; font-family: fzdbs;">茧·自习室 '+
+      ' <div class="ui mini blue tag label">新店优惠</div><div class="ui mini teal tag label">精选</div></div><div style="margin-top: 10px;margin-bottom: 10px;"> '+
+      ' <div class="ui gray basic label" style="color: #656d72;">自助打印</div><div class="ui gray basic label" style="color: #656d72;">双人桌</div></div> '+
+      ' <div class="meta"><div style="font-family: fzdbs;color: #3b3e41;">地址：昌平区 &nbsp;&nbsp;<div class="ui tiny label">2h体验卡：9.9元</div></div><span class="date" style="font-size: 13px;">“细心的店家还准备好多棒棒糖哦”</span> '+
+      ' </div></div> <div class="extra content">推荐指数：<div class="ui star rating" data-rating="5" data-max-rating="5"></div></div></div> ';
   
-    document.getElementById("cards-recommendation").innerHTML=text2+text3+text1;
+    document.getElementById("cards-recommendation").innerHTML=text2+text3+text1+text4+text5+text6;
             
           $('.ui.rating')
         .rating('disable');
@@ -529,8 +606,45 @@
           '<div class="ui gray basic label" style="color: #656d72;">有朗读间</div><div class="ui gray basic label" style="color: #656d72;">有就餐区域</div></div>'+
           '<div class="meta"><div style="font-family: fzdbs;color: #3b3e41;">地址：朝阳区 &nbsp;&nbsp;<div class="ui tiny label">1h体验卡：10元</div></div><span class="date" style="font-size: 13px;">“这次选择了开放区域，很喜欢她家的这种氛围”</span>'+
           '</div></div> <div class="extra content">推荐指数：<div class="ui star rating" data-rating="5" data-max-rating="5"></div></div></div>';
+
+                //洋葱自习室
+     var text1=      '       <div class="card" style="width: 350px;"><div class="blurring dimmable image"><div class="ui dimmer"> '+
+      ' <div class="content"><div class="center"><a href="yc-ssd.html" class="ui inverted button">查看详情</a></div></div></div><img src="pic/yc-t.JPG"> '+
+      '  </div><div class="left aligned content"><div style="font-size: 18px; font-family: fzdbs;">洋葱自习室 '+
+      ' <div class="ui mini teal tag label">精选</div></div><div style="margin-top: 10px;margin-bottom: 10px;"> '+
+      '  <div class="ui gray basic label" style="color: #656d72;">双人桌</div><div class="ui gray basic label" style="color: #656d72;">自助打印</div> '+
+      ' <div class="ui gray basic label" style="color: #656d72;">可以吃饭</div><div class="ui gray basic label" style="color: #656d72;">有朗读间</div></div> '+
+      ' <div class="meta"><div style="font-family: fzdbs;color: #3b3e41;">地址：丰台区 &nbsp;&nbsp;<div class="ui tiny label">4h体验卡：20元</div></div><span class="date" style="font-size: 13px;">“一家非常有特色且有实际意义的自习室哦”</span> '+
+      '  </div></div> <div class="extra content">推荐指数：<div class="ui star rating" data-rating="5" data-max-rating="5"></div></div></div> ';
+
+            //aa自习室
+      var      text4=   '         <div class="card" style="width: 350px;"><div class="blurring dimmable image"><div class="ui dimmer"> '+
+      ' <div class="content"><div class="center"><a href="aa-ssd.html" class="ui inverted button">查看详情</a></div></div></div><img src="pic/aa-t.JPG"> '+
+      '  </div><div class="left aligned content"><div style="font-size: 18px; font-family: fzdbs;">AA自习室 '+
+      ' <div class="ui mini teal tag label">精选</div></div><div style="margin-top: 10px;margin-bottom: 10px;"> '+
+      ' <div class="ui gray basic label" style="color: #656d72;">双人桌</div><div class="ui gray basic label" style="color: #656d72;">有就餐区域</div></div> '+
+      ' <div class="meta"><div style="font-family: fzdbs;color: #3b3e41;">地址：大兴区 &nbsp;&nbsp;<div class="ui tiny label">月卡：588元</div></div><span class="date" style="font-size: 13px;">“喜欢有帘子的设计，座位也很宽敞”</span> '+
+      ' </div></div> <div class="extra content">推荐指数：<div class="ui star rating" data-rating="5" data-max-rating="5"></div></div></div> ';
+      
+    var   text5='<div class="card" style="width: 350px;">'+'<div class="blurring dimmable image">'+'<div class="ui dimmer">'+
+          '<div class="content"><div class="center"><a href="lxkj-ssd.html" class="ui inverted button">查看详情</a></div></div></div><img src="pic/lxkj-t.jpg">'+
+          '</div><div class="left aligned content"><div style="font-size: 18px; font-family: fzdbs;">乐学空间自习室'+
+          '<div class="ui mini blue tag label">新店优惠</div><div class="ui mini teal tag label">精选</div></div><div style="margin-top: 10px;margin-bottom: 10px;">'+
+          '<div class="ui gray basic label" style="color: #656d72;">双人桌</div><div class="ui gray basic label" style="color: #656d72;">自助打印</div>'+
+          '<div class="ui gray basic label" style="color: #656d72;">有就餐区域</div></div>'+
+          '<div class="meta"><div style="font-family: fzdbs;color: #3b3e41;">地址：大兴区 &nbsp;&nbsp;<div class="ui tiny label">2h体验卡：19.9元</div></div><span class="date" style="font-size: 13px;">“完美，还有可爱的小猫嘻嘻嘻嘻嘻”</span>'+
+          '</div></div> <div class="extra content">推荐指数：<div class="ui star rating" data-rating="5" data-max-rating="5"></div></div></div>';
+
+                //上岸自习室
+     var text6 =        '     <div class="card" style="width: 350px;"><div class="blurring dimmable image"><div class="ui dimmer"> '+
+      ' <div class="content"><div class="center"><a href="shangx-ssd.html" class="ui inverted button">查看详情</a></div></div></div><img src="pic/shangx-t.JPG"> '+
+      ' </div><div class="left aligned content"><div style="font-size: 18px; font-family: fzdbs;">上岸共享自习室 '+
+      ' <div class="ui mini teal tag label">精选</div></div><div style="margin-top: 10px;margin-bottom: 10px;"> '+
+      ' <div class="ui gray basic label" style="color: #656d72;">有就餐区域</div><div class="ui gray basic label" style="color: #656d72;">有朗读间</div></div> '+
+      ' <div class="meta"><div style="font-family: fzdbs;color: #3b3e41;">地址：海淀区 &nbsp;&nbsp;<div class="ui tiny label">20次自由卡：999元</div></div><span class="date" style="font-size: 13px;">“外面的客厅非常干净，有茶叶和咖啡”</span> '+
+      ' </div></div> <div class="extra content">推荐指数：<div class="ui star rating" data-rating="5" data-max-rating="5"></div></div></div> ';
   
-    document.getElementById("cards-recommendation").innerHTML=text2+text3;
+    document.getElementById("cards-recommendation").innerHTML=text1+text2+text3+text4+text5+text6;
             
           $('.ui.rating')
         .rating('disable');
@@ -562,9 +676,48 @@
           '<div class="ui gray basic label" style="color: #656d72;">有就餐区域</div></div>'+
           '<div class="meta"><div style="font-family: fzdbs;color: #3b3e41;">地址：大兴区 &nbsp;&nbsp;<div class="ui tiny label">2h体验卡：19.9元</div></div><span class="date" style="font-size: 13px;">“完美，还有可爱的小猫嘻嘻嘻嘻嘻”</span>'+
           '</div></div> <div class="extra content">推荐指数：<div class="ui star rating" data-rating="5" data-max-rating="5"></div></div></div>';
+
+                //海雀自习室
+     var  text3='   <div class="card" style="width: 350px;"><div class="blurring dimmable image"><div class="ui dimmer"> '+
+      ' <div class="content"><div class="center"><a href="hq-ssd.html" class="ui inverted button">查看详情</a></div></div></div><img src="pic/hq-t.JPG"> '+
+      '  </div><div class="left aligned content"><div style="font-size: 18px; font-family: fzdbs;">海雀自习室 '+
+      ' <div class="ui mini teal tag label">精选</div></div><div style="margin-top: 10px;margin-bottom: 10px;"> '+
+      ' <div class="ui gray basic label" style="color: #656d72;">双人桌</div><div class="ui gray basic label" style="color: #656d72;">自助打印</div> '+
+      '<div class="ui gray basic label" style="color: #656d72;">可以通宵</div><div class="ui gray basic label" style="color: #656d72;">有朗读间</div></div> '+
+      '<div class="meta"><div style="font-family: fzdbs;color: #3b3e41;">地址：朝阳区 &nbsp;&nbsp;<div class="ui tiny label">2h学习：35.8元</div></div><span class="date" style="font-size: 13px;">“一个沉浸式的自习室哦，老板也很不错”</span> '+
+      ' </div></div> <div class="extra content">推荐指数：<div class="ui star rating" data-rating="5" data-max-rating="5"></div></div></div> ';
+
+      //六尺星球
+     var text4=        '    <div class="card" style="width: 350px;"><div class="blurring dimmable image"><div class="ui dimmer"> '+
+      ' <div class="content"><div class="center"><a href="lchxq-ssd.html" class="ui inverted button">查看详情</a></div></div></div><img src="pic/lchxq-t.JPG"> '+
+      ' </div><div class="left aligned content"><div style="font-size: 18px; font-family: fzdbs;">六尺星球自习室 '+
+      ' <div class="ui mini teal tag label">精选</div></div><div style="margin-top: 10px;margin-bottom: 10px;"> '+
+      ' <div class="ui gray basic label" style="color: #656d72;">双人桌</div><div class="ui gray basic label" style="color: #656d72;">自助打印</div> '+
+      ' <div class="ui gray basic label" style="color: #656d72;">可以吃饭</div><div class="ui gray basic label" style="color: #656d72;">有朗读间</div></div> '+
+      ' <div class="meta"><div style="font-family: fzdbs;color: #3b3e41;">地址：朝阳区 &nbsp;&nbsp;<div class="ui tiny label">Box一日体验卡：69元</div></div><span class="date" style="font-size: 13px;">“一家非常有特色且有实际意义的自习室哦”</span> '+
+      ' </div></div> <div class="extra content">推荐指数：<div class="ui star rating" data-rating="5" data-max-rating="5"></div></div></div> ';
+
+      //时光自习室
+     var text5='<div class="card" style="width: 350px;">'+'<div class="blurring dimmable image">'+'<div class="ui dimmer">'+
+          '<div class="content"><div class="center"><a href="shg-ssd.html" class="ui inverted button">查看详情</a></div></div></div><img src="pic/shg_t.jpg">'+
+          '</div><div class="left aligned content"><div style="font-size: 18px; font-family: fzdbs;">时光自习室'+
+          '<div class="ui mini teal tag label">精选</div></div><div style="margin-top: 10px;margin-bottom: 10px;">'+
+          '<div class="ui gray basic label" style="color: #656d72;">双人桌</div>'+
+          '<div class="ui gray basic label" style="color: #656d72;">有朗读间</div><div class="ui gray basic label" style="color: #656d72;">有就餐区域</div></div>'+
+          '<div class="meta"><div style="font-family: fzdbs;color: #3b3e41;">地址：朝阳区 &nbsp;&nbsp;<div class="ui tiny label">1h体验卡：10元</div></div><span class="date" style="font-size: 13px;">“这次选择了开放区域，很喜欢她家的这种氛围”</span>'+
+          '</div></div> <div class="extra content">推荐指数：<div class="ui star rating" data-rating="5" data-max-rating="5"></div></div></div>';
+
+      //呼吸自习室
+     var text6 =           '  <div class="card" style="width: 350px;"><div class="blurring dimmable image"><div class="ui dimmer"> '+
+      '<div class="content"><div class="center"><a href="hx-ssd.html" class="ui inverted button">查看详情</a></div></div></div><img src="pic/hx-t.JPG"> '+
+      ' </div><div class="left aligned content"><div style="font-size: 18px; font-family: fzdbs;">呼吸自习室 '+
+      ' <div class="ui mini blue tag label">新店优惠</div><div class="ui mini teal tag label">精选</div></div><div style="margin-top: 10px;margin-bottom: 10px;"> '+
+      ' <div class="ui gray basic label" style="color: #656d72;">有朗读间</div><div class="ui gray basic label" style="color: #656d72;">自助打印</div></div> '+
+      ' <div class="meta"><div style="font-family: fzdbs;color: #3b3e41;">地址：海淀区 &nbsp;&nbsp;<div class="ui tiny label">4h体验卡：29.9元</div></div><span class="date" style="font-size: 13px;">“不错的地方，老板小姐姐也很nice”</span> '+
+      ' </div></div> <div class="extra content">推荐指数：<div class="ui star rating" data-rating="4" data-max-rating="5"></div></div></div> ';
   
   
-    document.getElementById("cards-recommendation").innerHTML=text1+text2;
+    document.getElementById("cards-recommendation").innerHTML=text1+text2+text3+text4+text5+text6;
             
           $('.ui.rating')
         .rating('disable');
@@ -579,6 +732,36 @@
     document.getElementById('cards_recommendation_default').style.display="none";
     document.getElementById('button_shuangrenzixi').className="item";
 
+          //海雀自习室
+      var    text5='   <div class="card" style="width: 350px;"><div class="blurring dimmable image"><div class="ui dimmer"> '+
+      ' <div class="content"><div class="center"><a href="hq-ssd.html" class="ui inverted button">查看详情</a></div></div></div><img src="pic/hq-t.JPG"> '+
+      '  </div><div class="left aligned content"><div style="font-size: 18px; font-family: fzdbs;">海雀自习室 '+
+      ' <div class="ui mini teal tag label">精选</div></div><div style="margin-top: 10px;margin-bottom: 10px;"> '+
+      ' <div class="ui gray basic label" style="color: #656d72;">双人桌</div><div class="ui gray basic label" style="color: #656d72;">自助打印</div> '+
+      '<div class="ui gray basic label" style="color: #656d72;">可以通宵</div><div class="ui gray basic label" style="color: #656d72;">有朗读间</div></div> '+
+      '<div class="meta"><div style="font-family: fzdbs;color: #3b3e41;">地址：朝阳区 &nbsp;&nbsp;<div class="ui tiny label">2h学习：35.8元</div></div><span class="date" style="font-size: 13px;">“一个沉浸式的自习室哦，老板也很不错”</span> '+
+      ' </div></div> <div class="extra content">推荐指数：<div class="ui star rating" data-rating="5" data-max-rating="5"></div></div></div> ';
+
+      //六尺星球
+    var  text6=        '    <div class="card" style="width: 350px;"><div class="blurring dimmable image"><div class="ui dimmer"> '+
+      ' <div class="content"><div class="center"><a href="lchxq-ssd.html" class="ui inverted button">查看详情</a></div></div></div><img src="pic/lchxq-t.JPG"> '+
+      ' </div><div class="left aligned content"><div style="font-size: 18px; font-family: fzdbs;">六尺星球自习室 '+
+      ' <div class="ui mini teal tag label">精选</div></div><div style="margin-top: 10px;margin-bottom: 10px;"> '+
+      ' <div class="ui gray basic label" style="color: #656d72;">双人桌</div><div class="ui gray basic label" style="color: #656d72;">自助打印</div> '+
+      ' <div class="ui gray basic label" style="color: #656d72;">可以吃饭</div><div class="ui gray basic label" style="color: #656d72;">有朗读间</div></div> '+
+      ' <div class="meta"><div style="font-family: fzdbs;color: #3b3e41;">地址：朝阳区 &nbsp;&nbsp;<div class="ui tiny label">Box一日体验卡：69元</div></div><span class="date" style="font-size: 13px;">“一家非常有特色且有实际意义的自习室哦”</span> '+
+      ' </div></div> <div class="extra content">推荐指数：<div class="ui star rating" data-rating="5" data-max-rating="5"></div></div></div> ';
+
+          //洋葱自习室
+       var   text4=      '       <div class="card" style="width: 350px;"><div class="blurring dimmable image"><div class="ui dimmer"> '+
+      ' <div class="content"><div class="center"><a href="yc-ssd.html" class="ui inverted button">查看详情</a></div></div></div><img src="pic/yc-t.JPG"> '+
+      '  </div><div class="left aligned content"><div style="font-size: 18px; font-family: fzdbs;">洋葱自习室 '+
+      ' <div class="ui mini teal tag label">精选</div></div><div style="margin-top: 10px;margin-bottom: 10px;"> '+
+      '  <div class="ui gray basic label" style="color: #656d72;">双人桌</div><div class="ui gray basic label" style="color: #656d72;">自助打印</div> '+
+      ' <div class="ui gray basic label" style="color: #656d72;">可以吃饭</div><div class="ui gray basic label" style="color: #656d72;">有朗读间</div></div> '+
+      ' <div class="meta"><div style="font-family: fzdbs;color: #3b3e41;">地址：丰台区 &nbsp;&nbsp;<div class="ui tiny label">4h体验卡：20元</div></div><span class="date" style="font-size: 13px;">“一家非常有特色且有实际意义的自习室哦”</span> '+
+      '  </div></div> <div class="extra content">推荐指数：<div class="ui star rating" data-rating="5" data-max-rating="5"></div></div></div> ';
+    //1988自习室
     var text1='<div class="card" style="width: 350px;">'+'<div class="blurring dimmable image">'+'<div class="ui dimmer">'+
           '<div class="content"><div class="center"><a href="1988-ssd.html" class="ui inverted button">查看详情</a></div></div></div><img src="pic/1988-t.jpg">'+
           '</div><div class="left aligned content"><div style="font-size: 18px; font-family: fzdbs;">壹玖捌捌24小时共享自习室'+
@@ -587,7 +770,7 @@
           '<div class="ui gray basic label" style="color: #656d72;">有朗读间</div></div>'+
           '<div class="meta"><div style="font-family: fzdbs;color: #3b3e41;">地址：昌平区 &nbsp;&nbsp;<div class="ui tiny label">2h体验卡：10元</div></div><span class="date" style="font-size: 13px;">“完美，还有可爱的小猫嘻嘻嘻嘻嘻”</span>'+
           '</div></div> <div class="extra content">推荐指数：<div class="ui star rating" data-rating="5" data-max-rating="5"></div></div></div>';
-    
+    //蜜蜂自习室
     var text2='<div class="card" style="width: 350px;">'+'<div class="blurring dimmable image">'+'<div class="ui dimmer">'+
           '<div class="content"><div class="center"><a href="mf-ssd.html" class="ui inverted button">查看详情</a></div></div></div><img src="pic/mf-t.jpg">'+
           '</div><div class="left aligned content"><div style="font-size: 18px; font-family: fzdbs;">蜜蜂自习室'+
@@ -596,7 +779,7 @@
           '<div class="ui gray basic label" style="color: #656d72;">有朗读间</div><div class="ui gray basic label" style="color: #656d72;">有就餐区域</div></div>'+
           '<div class="meta"><div style="font-family: fzdbs;color: #3b3e41;">地址：朝阳区 &nbsp;&nbsp;<div class="ui tiny label">人均：24元</div></div><span class="date" style="font-size: 13px;">“很喜欢在他家的感觉，在楼下学习了2小时”</span>'+
           '</div></div> <div class="extra content">推荐指数：<div class="ui star rating" data-rating="5" data-max-rating="5"></div></div></div>';
-  
+    //时光自习室
     var text3='<div class="card" style="width: 350px;">'+'<div class="blurring dimmable image">'+'<div class="ui dimmer">'+
           '<div class="content"><div class="center"><a href="shg-ssd.html" class="ui inverted button">查看详情</a></div></div></div><img src="pic/shg_t.jpg">'+
           '</div><div class="left aligned content"><div style="font-size: 18px; font-family: fzdbs;">时光自习室'+
@@ -606,7 +789,7 @@
           '<div class="meta"><div style="font-family: fzdbs;color: #3b3e41;">地址：朝阳区 &nbsp;&nbsp;<div class="ui tiny label">1h体验卡：10元</div></div><span class="date" style="font-size: 13px;">“这次选择了开放区域，很喜欢她家的这种氛围”</span>'+
           '</div></div> <div class="extra content">推荐指数：<div class="ui star rating" data-rating="5" data-max-rating="5"></div></div></div>';
   
-    document.getElementById("cards-recommendation").innerHTML=text1+text2;
+    document.getElementById("cards-recommendation").innerHTML=text6+text5+text1+text2+text3+text4;
             
           $('.ui.rating')
         .rating('disable');
@@ -617,5 +800,200 @@
     };
 
 
+
+    function gotochaoyang(){
+      document.getElementById('view_mapdefault').style.display="none";
+      document.getElementById('button_chaoyang').className="item";
+      var text1,text2,text3,text4,text5,text6;
+      //蜜蜂自习室
+      text1=          '<div class="card" style="width: 350px;"><div class="blurring dimmable image"><div class="ui dimmer">'+
+      '<div class="content"><div class="center"><a href="mf-ssd.html" class="ui inverted button">查看详情</a></div></div></div><img src="pic/mf-t.jpg">'+
+      '</div><div class="left aligned content"><div style="font-size: 18px; font-family: fzdbs;">蜜蜂自习室 '+
+      '<div class="ui mini teal tag label">精选</div></div><div style="margin-top: 10px;margin-bottom: 10px;"> '+
+      '<div class="ui gray basic label" style="color: #656d72;">双人桌</div> '+
+      '<div class="ui gray basic label" style="color: #656d72;">有朗读间</div><div class="ui gray basic label" style="color: #656d72;">有就餐区域</div></div>'+
+      '<div class="meta"><div style="font-family: fzdbs;color: #3b3e41;">地址：朝阳区 &nbsp;&nbsp;<div class="ui tiny label">人均：24元</div></div><span class="date" style="font-size: 13px;">“很喜欢在他家的感觉，在楼下学习了2小时”</span> '+
+      '</div></div> <div class="extra content">推荐指数：<div class="ui star rating" data-rating="5" data-max-rating="5"></div></div></div> ';
+      
+      //海雀自习室
+      text2='   <div class="card" style="width: 350px;"><div class="blurring dimmable image"><div class="ui dimmer"> '+
+      ' <div class="content"><div class="center"><a href="hq-ssd.html" class="ui inverted button">查看详情</a></div></div></div><img src="pic/hq-t.JPG"> '+
+      '  </div><div class="left aligned content"><div style="font-size: 18px; font-family: fzdbs;">海雀自习室 '+
+      ' <div class="ui mini teal tag label">精选</div></div><div style="margin-top: 10px;margin-bottom: 10px;"> '+
+      ' <div class="ui gray basic label" style="color: #656d72;">双人桌</div><div class="ui gray basic label" style="color: #656d72;">自助打印</div> '+
+      '<div class="ui gray basic label" style="color: #656d72;">可以通宵</div><div class="ui gray basic label" style="color: #656d72;">有朗读间</div></div> '+
+      '<div class="meta"><div style="font-family: fzdbs;color: #3b3e41;">地址：朝阳区 &nbsp;&nbsp;<div class="ui tiny label">2h学习：35.8元</div></div><span class="date" style="font-size: 13px;">“一个沉浸式的自习室哦，老板也很不错”</span> '+
+      ' </div></div> <div class="extra content">推荐指数：<div class="ui star rating" data-rating="5" data-max-rating="5"></div></div></div> ';
+
+      //六尺星球
+      text3=        '    <div class="card" style="width: 350px;"><div class="blurring dimmable image"><div class="ui dimmer"> '+
+      ' <div class="content"><div class="center"><a href="lchxq-ssd.html" class="ui inverted button">查看详情</a></div></div></div><img src="pic/lchxq-t.JPG"> '+
+      ' </div><div class="left aligned content"><div style="font-size: 18px; font-family: fzdbs;">六尺星球自习室 '+
+      ' <div class="ui mini teal tag label">精选</div></div><div style="margin-top: 10px;margin-bottom: 10px;"> '+
+      ' <div class="ui gray basic label" style="color: #656d72;">双人桌</div><div class="ui gray basic label" style="color: #656d72;">自助打印</div> '+
+      ' <div class="ui gray basic label" style="color: #656d72;">可以吃饭</div><div class="ui gray basic label" style="color: #656d72;">有朗读间</div></div> '+
+      ' <div class="meta"><div style="font-family: fzdbs;color: #3b3e41;">地址：朝阳区 &nbsp;&nbsp;<div class="ui tiny label">Box一日体验卡：69元</div></div><span class="date" style="font-size: 13px;">“一家非常有特色且有实际意义的自习室哦”</span> '+
+      ' </div></div> <div class="extra content">推荐指数：<div class="ui star rating" data-rating="5" data-max-rating="5"></div></div></div> ';
+
+      //时光自习室
+      text4='<div class="card" style="width: 350px;">'+'<div class="blurring dimmable image">'+'<div class="ui dimmer">'+
+          '<div class="content"><div class="center"><a href="shg-ssd.html" class="ui inverted button">查看详情</a></div></div></div><img src="pic/shg_t.jpg">'+
+          '</div><div class="left aligned content"><div style="font-size: 18px; font-family: fzdbs;">时光自习室'+
+          '<div class="ui mini teal tag label">精选</div></div><div style="margin-top: 10px;margin-bottom: 10px;">'+
+          '<div class="ui gray basic label" style="color: #656d72;">双人桌</div>'+
+          '<div class="ui gray basic label" style="color: #656d72;">有朗读间</div><div class="ui gray basic label" style="color: #656d72;">有就餐区域</div></div>'+
+          '<div class="meta"><div style="font-family: fzdbs;color: #3b3e41;">地址：朝阳区 &nbsp;&nbsp;<div class="ui tiny label">1h体验卡：10元</div></div><span class="date" style="font-size: 13px;">“这次选择了开放区域，很喜欢她家的这种氛围”</span>'+
+          '</div></div> <div class="extra content">推荐指数：<div class="ui star rating" data-rating="5" data-max-rating="5"></div></div></div>';
+
+      //呼吸自习室
+      text5 =           '  <div class="card" style="width: 350px;"><div class="blurring dimmable image"><div class="ui dimmer"> '+
+      '<div class="content"><div class="center"><a href="hx-ssd.html" class="ui inverted button">查看详情</a></div></div></div><img src="pic/hx-t.JPG"> '+
+      ' </div><div class="left aligned content"><div style="font-size: 18px; font-family: fzdbs;">呼吸自习室 '+
+      ' <div class="ui mini blue tag label">新店优惠</div><div class="ui mini teal tag label">精选</div></div><div style="margin-top: 10px;margin-bottom: 10px;"> '+
+      ' <div class="ui gray basic label" style="color: #656d72;">有朗读间</div><div class="ui gray basic label" style="color: #656d72;">自助打印</div></div> '+
+      ' <div class="meta"><div style="font-family: fzdbs;color: #3b3e41;">地址：海淀区 &nbsp;&nbsp;<div class="ui tiny label">4h体验卡：29.9元</div></div><span class="date" style="font-size: 13px;">“不错的地方，老板小姐姐也很nice”</span> '+
+      ' </div></div> <div class="extra content">推荐指数：<div class="ui star rating" data-rating="4" data-max-rating="5"></div></div></div> ';
+      document.getElementById("view_map").innerHTML=text1+text2+text3+text4+text5;
+      $('.ui.rating')
+        .rating('disable');
+
+          $('.special.cards .image').dimmer({
+        on: 'hover'});
+    };
+
+    function gotofengtai(){
+      document.getElementById('view_mapdefault').style.display="none";
+      document.getElementById('button_chaoyang').className="item";
+      var text1,text2,text3,text4,text5,text6;
+      //洋葱自习室
+      text1=      '       <div class="card" style="width: 350px;"><div class="blurring dimmable image"><div class="ui dimmer"> '+
+      ' <div class="content"><div class="center"><a href="yc-ssd.html" class="ui inverted button">查看详情</a></div></div></div><img src="pic/yc-t.JPG"> '+
+      '  </div><div class="left aligned content"><div style="font-size: 18px; font-family: fzdbs;">洋葱自习室 '+
+      ' <div class="ui mini teal tag label">精选</div></div><div style="margin-top: 10px;margin-bottom: 10px;"> '+
+      '  <div class="ui gray basic label" style="color: #656d72;">双人桌</div><div class="ui gray basic label" style="color: #656d72;">自助打印</div> '+
+      ' <div class="ui gray basic label" style="color: #656d72;">可以吃饭</div><div class="ui gray basic label" style="color: #656d72;">有朗读间</div></div> '+
+      ' <div class="meta"><div style="font-family: fzdbs;color: #3b3e41;">地址：丰台区 &nbsp;&nbsp;<div class="ui tiny label">4h体验卡：20元</div></div><span class="date" style="font-size: 13px;">“一家非常有特色且有实际意义的自习室哦”</span> '+
+      '  </div></div> <div class="extra content">推荐指数：<div class="ui star rating" data-rating="5" data-max-rating="5"></div></div></div> ';
+      
+      document.getElementById("view_map").innerHTML=text1;
+      $('.ui.rating')
+        .rating('disable');
+
+          $('.special.cards .image').dimmer({
+        on: 'hover'});
+    };
+
+    function gotodaxing(){
+      document.getElementById('view_mapdefault').style.display="none";
+      document.getElementById('button_chaoyang').className="item";
+      var text1,text2,text3,text4,text5,text6;
+      //aa自习室
+      text1=   '         <div class="card" style="width: 350px;"><div class="blurring dimmable image"><div class="ui dimmer"> '+
+      ' <div class="content"><div class="center"><a href="aa-ssd.html" class="ui inverted button">查看详情</a></div></div></div><img src="pic/aa-t.JPG"> '+
+      '  </div><div class="left aligned content"><div style="font-size: 18px; font-family: fzdbs;">AA自习室 '+
+      ' <div class="ui mini teal tag label">精选</div></div><div style="margin-top: 10px;margin-bottom: 10px;"> '+
+      ' <div class="ui gray basic label" style="color: #656d72;">双人桌</div><div class="ui gray basic label" style="color: #656d72;">有就餐区域</div></div> '+
+      ' <div class="meta"><div style="font-family: fzdbs;color: #3b3e41;">地址：大兴区 &nbsp;&nbsp;<div class="ui tiny label">月卡：588元</div></div><span class="date" style="font-size: 13px;">“喜欢有帘子的设计，座位也很宽敞”</span> '+
+      ' </div></div> <div class="extra content">推荐指数：<div class="ui star rating" data-rating="5" data-max-rating="5"></div></div></div> ';
+      
+      text2='<div class="card" style="width: 350px;">'+'<div class="blurring dimmable image">'+'<div class="ui dimmer">'+
+          '<div class="content"><div class="center"><a href="lxkj-ssd.html" class="ui inverted button">查看详情</a></div></div></div><img src="pic/lxkj-t.jpg">'+
+          '</div><div class="left aligned content"><div style="font-size: 18px; font-family: fzdbs;">乐学空间自习室'+
+          '<div class="ui mini blue tag label">新店优惠</div><div class="ui mini teal tag label">精选</div></div><div style="margin-top: 10px;margin-bottom: 10px;">'+
+          '<div class="ui gray basic label" style="color: #656d72;">双人桌</div><div class="ui gray basic label" style="color: #656d72;">自助打印</div>'+
+          '<div class="ui gray basic label" style="color: #656d72;">有就餐区域</div></div>'+
+          '<div class="meta"><div style="font-family: fzdbs;color: #3b3e41;">地址：大兴区 &nbsp;&nbsp;<div class="ui tiny label">2h体验卡：19.9元</div></div><span class="date" style="font-size: 13px;">“完美，还有可爱的小猫嘻嘻嘻嘻嘻”</span>'+
+          '</div></div> <div class="extra content">推荐指数：<div class="ui star rating" data-rating="5" data-max-rating="5"></div></div></div>';
+
+      document.getElementById("view_map").innerHTML=text1+text2;
+      $('.ui.rating')
+        .rating('disable');
+
+          $('.special.cards .image').dimmer({
+        on: 'hover'});
+    };
+
+    function gotoshijingshan(){
+      document.getElementById('view_mapdefault').style.display="none";
+      document.getElementById('button_chaoyang').className="item";
+      var text1,text2,text3,text4,text5,text6;
+      //侧耳倾听自习室
+      text1=    '     <div class="card" style="width: 350px;"><div class="blurring dimmable image"><div class="ui dimmer"> '+
+      ' <div class="content"><div class="center"><a href="crqt-ssd.html" class="ui inverted button">查看详情</a></div></div></div><img src="pic/crqt-t.JPG"> '+
+      ' </div><div class="left aligned content"><div style="font-size: 18px; font-family: fzdbs;">侧耳倾听自习室 '+
+      ' <div class="ui mini teal tag label">精选</div></div><div style="margin-top: 10px;margin-bottom: 10px;"> '+
+      ' <div class="ui gray basic label" style="color: #656d72;">自助打印</div><div class="ui gray basic label" style="color: #656d72;">有就餐区域</div></div> '+
+      ' <div class="meta"><div style="font-family: fzdbs;color: #3b3e41;">地址：石景山区 &nbsp;&nbsp;<div class="ui tiny label">月卡：958元</div></div><span class="date" style="font-size: 13px;">“干净整洁，很安静，休息时还有小食供应”</span> '+
+      ' </div></div> <div class="extra content">推荐指数：<div class="ui star rating" data-rating="5" data-max-rating="5"></div></div></div> ';
+      
+      document.getElementById("view_map").innerHTML=text1;
+      $('.ui.rating')
+        .rating('disable');
+
+          $('.special.cards .image').dimmer({
+        on: 'hover'});
+    };
+
+
+    function gotohaidian(){
+      document.getElementById('view_mapdefault').style.display="none";
+      document.getElementById('button_chaoyang').className="item";
+      var text1,text2,text3,text4,text5,text6;
+      //蓝鲸自习室
+      text1=    '      <div class="card" style="width: 350px;"><div class="blurring dimmable image"><div class="ui dimmer"> '+
+      ' <div class="content"><div class="center"><a href="lj-ssd.html" class="ui inverted button">查看详情</a></div></div></div><img src="pic/lj-t.JPG"> '+
+      ' </div><div class="left aligned content"><div style="font-size: 18px; font-family: fzdbs;">蓝鲸24h自习室 '+
+      ' <div class="ui mini blue tag label">新店优惠</div><div class="ui mini teal tag label">精选</div></div><div style="margin-top: 10px;margin-bottom: 10px;"> '+
+      ' <div class="ui gray basic label" style="color: #656d72;">有朗读间</div><div class="ui gray basic label" style="color: #656d72;">自助打印</div></div> '+
+      ' <div class="meta"><div style="font-family: fzdbs;color: #3b3e41;">地址：大兴区 &nbsp;&nbsp;<div class="ui tiny label">4h体验卡：16.8元</div></div><span class="date" style="font-size: 13px;">“免费提供饮料和微波炉，小餐台很人性化哦”</span> '+
+      ' </div></div> <div class="extra content">推荐指数：<div class="ui star rating" data-rating="5" data-max-rating="5"></div></div></div> ';
+      
+      //上岸自习室
+      text2 =        '     <div class="card" style="width: 350px;"><div class="blurring dimmable image"><div class="ui dimmer"> '+
+      ' <div class="content"><div class="center"><a href="shangx-ssd.html" class="ui inverted button">查看详情</a></div></div></div><img src="pic/shangx-t.JPG"> '+
+      ' </div><div class="left aligned content"><div style="font-size: 18px; font-family: fzdbs;">上岸共享自习室 '+
+      ' <div class="ui mini teal tag label">精选</div></div><div style="margin-top: 10px;margin-bottom: 10px;"> '+
+      ' <div class="ui gray basic label" style="color: #656d72;">有就餐区域</div><div class="ui gray basic label" style="color: #656d72;">有朗读间</div></div> '+
+      ' <div class="meta"><div style="font-family: fzdbs;color: #3b3e41;">地址：海淀区 &nbsp;&nbsp;<div class="ui tiny label">20次自由卡：999元</div></div><span class="date" style="font-size: 13px;">“外面的客厅非常干净，有茶叶和咖啡”</span> '+
+      ' </div></div> <div class="extra content">推荐指数：<div class="ui star rating" data-rating="5" data-max-rating="5"></div></div></div> ';
+      
+      document.getElementById("view_map").innerHTML=text1+text2;
+      $('.ui.rating')
+        .rating('disable');
+
+          $('.special.cards .image').dimmer({
+        on: 'hover'});
+    };
+
+    function gotochangping(){
+      document.getElementById('view_mapdefault').style.display="none";
+      document.getElementById('button_chaoyang').className="item";
+      var text1,text2,text3,text4,text5,text6;
+    //1988自习室
+    text1='<div class="card" style="width: 350px;">'+'<div class="blurring dimmable image">'+'<div class="ui dimmer">'+
+          '<div class="content"><div class="center"><a href="1988-ssd.html" class="ui inverted button">查看详情</a></div></div></div><img src="pic/1988-t.jpg">'+
+          '</div><div class="left aligned content"><div style="font-size: 18px; font-family: fzdbs;">壹玖捌捌24小时共享自习室'+
+          '<div class="ui mini teal tag label">精选</div></div><div style="margin-top: 10px;margin-bottom: 10px;">'+
+          '<div class="ui gray basic label" style="color: #656d72;">自助打印</div>'+
+          '<div class="ui gray basic label" style="color: #656d72;">有朗读间</div></div>'+
+          '<div class="meta"><div style="font-family: fzdbs;color: #3b3e41;">地址：昌平区 &nbsp;&nbsp;<div class="ui tiny label">2h体验卡：10元</div></div><span class="date" style="font-size: 13px;">“完美，还有可爱的小猫嘻嘻嘻嘻嘻”</span>'+
+          '</div></div> <div class="extra content">推荐指数：<div class="ui star rating" data-rating="5" data-max-rating="5"></div></div></div>';
+     
+     //茧自习室
+      text2 =     '    <div class="card" style="width: 350px;"><div class="blurring dimmable image"><div class="ui dimmer"> '+
+      ' <div class="content"><div class="center"><a href="j-ssd.html" class="ui inverted button">查看详情</a></div></div></div><img src="pic/j-t.JPG"> '+
+      ' </div><div class="left aligned content"><div style="font-size: 18px; font-family: fzdbs;">茧·自习室 '+
+      ' <div class="ui mini blue tag label">新店优惠</div><div class="ui mini teal tag label">精选</div></div><div style="margin-top: 10px;margin-bottom: 10px;"> '+
+      ' <div class="ui gray basic label" style="color: #656d72;">自助打印</div><div class="ui gray basic label" style="color: #656d72;">双人桌</div></div> '+
+      ' <div class="meta"><div style="font-family: fzdbs;color: #3b3e41;">地址：昌平区 &nbsp;&nbsp;<div class="ui tiny label">2h体验卡：9.9元</div></div><span class="date" style="font-size: 13px;">“细心的店家还准备好多棒棒糖哦”</span> '+
+      ' </div></div> <div class="extra content">推荐指数：<div class="ui star rating" data-rating="5" data-max-rating="5"></div></div></div> ';
+      
+      document.getElementById("view_map").innerHTML=text1 +text2;
+      $('.ui.rating')
+        .rating('disable');
+
+          $('.special.cards .image').dimmer({
+        on: 'hover'});
+    };
 
 </script>
