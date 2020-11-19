@@ -2,7 +2,7 @@
 <html>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <head>
-  <title>寻找小伙伴</title>
+  <title>- 寻找小伙伴 -</title>
   <!--semantic-ui / bootstrap配置-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css'>
@@ -180,13 +180,7 @@
     
     <div class="ui large top fixed menu">
       <div class="ui container">
-        <div class="ui header" style="border: transparent;font-family: fzdbs; margin-top: 10px;">牛牛&自习室</div>
-        <div class="right menu">
-          <a class="item">主页</a>
-          <a class="item">精选自习室</a>
-          <a class="item">个性化推荐</a>
-          <a class="item">自习室地图</a>
-        </div>
+        <a class="ui header" href="homepage.html" style="border: transparent;font-family: fzdbs; margin-top: 10px;">趣学有间</a>
       </div>
     </div>
 
@@ -194,13 +188,13 @@
       <div class="row">
         <div class="center aligned column">
           <h1 class="ui header" style="font-family: fzdbs;">- 征集学习伙伴信息发布 -</h1>
-          <p style="font-family: fzdbs; font-size: 20px;">巴拉巴拉点击一下这些事description部分</p>
+          <p style="font-family: fzdbs; font-size: 18px;color: #B8A99A;">请完成下列信息填写，提交后管理员会帮忙发布哦</p>
         </div>
       </div> 
     </div>
     
     <div class="ui text container" style="margin-top: 50px;" >
-      <h4 class="ui horizontal divider header" style="color:darkgray;"><i class="tag icon"></i> 好好学习 天天向上 </h4>
+      <h4 class="ui horizontal divider header" style="color:darkgray;font-family: fzdbs;"><i class="tag icon"></i> 好好学习 天天向上 </h4>
       <form class="ui form">
         <div class="inline fields">
           <label for="fruit">请选择你的联系方式</label>
@@ -243,7 +237,10 @@
             <label>我同意将以上全部信息在平台“寻找学习伙伴公告板”公开显示</label>
           </div>
         </div>
-        <button class="ui button" type="button" id="button_submit" onclick="showmodal()">提交信息</button>
+        <div class="ui center aligned container">
+          <button class="ui brown basic button" type="button" id="button_submit" onclick="showmodal()">提交信息</button>
+        </div>
+        
       </form>
 
       
@@ -261,7 +258,7 @@
         </div>
         
         <div class="actions" style="margin-left: 60%;">
-          <div class="ui green ok inverted button">
+          <div class="ui green ok inverted button" onclick="returntoppboard()">
             <i class="checkmark icon"></i> 确定
           </div>
         </div>
@@ -282,13 +279,12 @@
         <div class="three wide column">
           <h4 class="ui inverted header">About</h4>
           <div class="ui inverted link list">
-            <a href="#" class="item">Sitemap</a>
-            <a href="#" class="item">Contact Us</a>
+            <a href="https://jingxiashan.github.io" target="_blank" class="item" style="font-family: fzdbs;">关于作者</a>
           </div>
         </div>
         <div class="seven wide column">
-          <h4 class="ui inverted header">DESIGN & CODE</h4>
-          <p>Literacy and Skills for 21st Century Talents</p>
+          <h4 class="ui inverted header" style="font-family: fzdbs;">趣学有间</h4>
+          <p style="font-family: fzdbs;">“让学习变成一件享受的事情”</p>
         </div>
       </div>
     </div>
@@ -302,6 +298,10 @@
     $('.ui.basic.modal')
   			  .modal('show')
   			;
+  }
+
+  function  returntoppboard(){
+    self.location='ppboard.html';
   }
 
 </script>

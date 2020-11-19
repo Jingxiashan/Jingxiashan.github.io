@@ -2,7 +2,7 @@
 <html>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <head>
-  <title>老母猪自习室</title>
+  <title>- 全能好店，应有尽有 -</title>
   <!--semantic-ui / bootstrap配置-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css'>
@@ -13,6 +13,9 @@
   <script>
     $(document)
       .ready(function() {
+
+
+
         $('.ui.radio.checkbox')
         .checkbox();
 
@@ -182,97 +185,55 @@
 
     <div class="ui center aligned stackable grid container" style="margin-top: 100px;">
       <div class="row">
-        <div class="six wide left aligned column">
-          <h1 class="ui header" style="font-family: fzdbs;">- 老母猪自习室 -</h1>
-          <div style="margin-top: 10px;margin-bottom: 10px;">
-            <div class="ui gray basic label" style="color: #656d72;">双人桌</div>
-            <div class="ui gray basic label" style="color: #656d72;">自助打印</div>
-            <div class="ui gray basic label" style="color: #656d72;">有朗读间</div>
-            <div class="ui gray basic label" style="color: #656d72;">有就餐区域</div>
-          </div>
-          <p style="font-family: fzdbs; font-size: 15px;"><i class="map marker icon"></i>巴拉巴拉点击一下这些事description部分
-            <br><i class="phone icon"></i>0936-8653427 13456789081</p>
-        </div>
-        <div class="five wide column">
-          <div class="ui statistics">
-            <div class="statistic">
-              <div class="value">
-                5.9
-              </div>
-              <div class="label">店铺评分<div class="ui star rating" data-rating="4" data-max-rating="5"></div></div>
-            </div>
-            <div class="statistic">
-              <div class="value">
-                91%
-              </div>
-              <div class="label">好评率<div class="ui heart rating" data-rating="4" data-max-rating="5"></div></div>
-            </div>
-          </div>
+        <div class="center aligned column">
+          <h1 class="ui header" style="font-family: fzdbs;">- 全能好店，应有尽有 -</h1>
+          <p style="font-family: fzdbs; font-size: 18px;color: #B8A99A;">只有你想不到，没有老板做不到</p>
+          <button class="ui basic button" id="showdetail" onclick="showaaa()" style="font-family: fzdbs;">点击显示店铺评分对比～</button>
+          <div id="favouritesnumdata"></div>
+          <div id="goodcommentratiodata"></div>
         </div>
       </div> 
 
-      <div class="row">
-        <div class="left aligned column" style="margin-left: 15%;"><h3 class="ui header" style="font-family: fzdbs;">- 店内图片 -</h3></div>
-      </div>
-      <div class="ui center aligned medium images">
-        <img src="pic/bg1.jpg" style="width: 250px;">
-        <img src="pic/bg1.jpg" style="width: 250px;">
-        <img src="pic/bg1.jpg" style="width: 250px;">
-      </div>
+      <div class="ui special cards" style="margin-top: 20px;margin-bottom: 100px;">
+        <div class="card" style="width: 350px;"><div class="blurring dimmable image"><div class="ui dimmer">
+          <div class="content"><div class="center"><a href="hq-ssd.html" class="ui inverted button">查看详情</a></div></div></div><img src="pic/hq-t.JPG">
+          </div><div class="left aligned content"><div style="font-size: 18px; font-family: fzdbs;">海雀自习室
+          <div class="ui mini teal tag label">精选</div></div><div style="margin-top: 10px;margin-bottom: 10px;">
+            <div class="ui gray basic label" style="color: #656d72;">双人桌</div><div class="ui gray basic label" style="color: #656d72;">自助打印</div>
+          <div class="ui gray basic label" style="color: #656d72;">可以通宵</div><div class="ui gray basic label" style="color: #656d72;">有朗读间</div></div>
+          <div class="meta"><div style="font-family: fzdbs;color: #3b3e41;">地址：朝阳区 &nbsp;&nbsp;<div class="ui tiny label">2h学习：35.8元</div></div><span class="date" style="font-size: 13px;">“一个沉浸式的自习室哦，老板也很不错”</span>
+          </div></div> <div class="extra content">推荐指数：<div class="ui star rating" data-rating="5" data-max-rating="5"></div></div></div>
 
-      <div class="row">
-        <div class="left aligned column" style="margin-left: 15%;"><h3 class="ui header" style="font-family: fzdbs;">- 有关评价 -</h3></div>
-      </div>
-    </div>
+          <div class="card" style="width: 350px;"><div class="blurring dimmable image"><div class="ui dimmer">
+            <div class="content"><div class="center"><a href="yc-ssd.html" class="ui inverted button">查看详情</a></div></div></div><img src="pic/yc-t.JPG">
+            </div><div class="left aligned content"><div style="font-size: 18px; font-family: fzdbs;">洋葱自习室
+            <div class="ui mini teal tag label">精选</div></div><div style="margin-top: 10px;margin-bottom: 10px;">
+              <div class="ui gray basic label" style="color: #656d72;">双人桌</div><div class="ui gray basic label" style="color: #656d72;">自助打印</div>
+              <div class="ui gray basic label" style="color: #656d72;">可以吃饭</div><div class="ui gray basic label" style="color: #656d72;">有朗读间</div></div>
+            <div class="meta"><div style="font-family: fzdbs;color: #3b3e41;">地址：丰台区 &nbsp;&nbsp;<div class="ui tiny label">4h体验卡：20元</div></div><span class="date" style="font-size: 13px;">“一家非常有特色且有实际意义的自习室哦”</span>
+            </div></div> <div class="extra content">推荐指数：<div class="ui star rating" data-rating="5" data-max-rating="5"></div></div></div>
 
-    <div class="ui text container" style="margin-top: 30px;">
-      <div class="ui minimal comments">
-        <div class="comment">
-          <a class="avatar">
-            <img src="pic/jenny.jpg">
-          </a>
-          <div class="content">
-            <a class="author">Matt</a>
-            <div class="metadata">
-              <span class="date">今天下午 5:42</span>
-            </div>
-            <div class="text">有人和我一起写作业么！麦扣JoniBernardweiran的作业我都写不完啊啊啊啊！哭了快！ </div>
-          </div>
-        </div>
+          
+            <div class="card" style="width: 350px;"><div class="blurring dimmable image"><div class="ui dimmer">
+              <div class="content"><div class="center"><a href="lchxq-ssd.html" class="ui inverted button">查看详情</a></div></div></div><img src="pic/lchxq-t.JPG">
+              </div><div class="left aligned content"><div style="font-size: 18px; font-family: fzdbs;">六尺星球自习室
+              <div class="ui mini teal tag label">精选</div></div><div style="margin-top: 10px;margin-bottom: 10px;">
+                <div class="ui gray basic label" style="color: #656d72;">双人桌</div><div class="ui gray basic label" style="color: #656d72;">自助打印</div>
+                <div class="ui gray basic label" style="color: #656d72;">可以吃饭</div><div class="ui gray basic label" style="color: #656d72;">有朗读间</div></div>
+              <div class="meta"><div style="font-family: fzdbs;color: #3b3e41;">地址：朝阳区 &nbsp;&nbsp;<div class="ui tiny label">Box一日体验卡：69元</div></div><span class="date" style="font-size: 13px;">“一家非常有特色且有实际意义的自习室哦”</span>
+              </div></div> <div class="extra content">推荐指数：<div class="ui star rating" data-rating="5" data-max-rating="5"></div></div></div>
+
+
+
+
+
+
+ 
+
+      
       </div>
     </div>
-    <div class="ui text container" style="margin-top: 30px;">
-      <div class="ui minimal comments">
-        <div class="comment">
-          <a class="avatar">
-            <img src="pic/jenny.jpg">
-          </a>
-          <div class="content">
-            <a class="author">Matt</a>
-            <div class="metadata">
-              <span class="date">今天下午 5:42</span>
-            </div>
-            <div class="text">有人和我一起写作业么！麦扣JoniBernardweiran的作业我都写不完啊啊啊啊！哭了快！ </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="ui text container" style="margin-top: 30px;">
-      <div class="ui minimal comments">
-        <div class="comment">
-          <a class="avatar">
-            <img src="pic/jenny.jpg">
-          </a>
-          <div class="content">
-            <a class="author">Matt</a>
-            <div class="metadata">
-              <span class="date">今天下午 5:42</span>
-            </div>
-            <div class="text">有人和我一起写作业么！麦扣JoniBernardweiran的作业我都写不完啊啊啊啊！哭了快！ </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    
 
 
   </div>
@@ -300,3 +261,10 @@
 </body>
 </html>
 
+<script>
+
+function showaaa(){
+          document.getElementById('favouritesnumdata').innerHTML = '<iframe title=" " aria-label="Interactive line chart" id="datawrapper-chart-11AbA" src="https://datawrapper.dwcdn.net/11AbA/2/" scrolling="no" frameborder="0" style="border: none;" width="800" height="200"></iframe>';
+          document.getElementById('goodcommentratiodata').innerHTML='<iframe title=" " aria-label="Interactive line chart" id="datawrapper-chart-11AbA" src="https://datawrapper.dwcdn.net/11AbA/2/" scrolling="no" frameborder="0" style="border: none;" width="800" height="200"></iframe>';
+        };
+</script>
