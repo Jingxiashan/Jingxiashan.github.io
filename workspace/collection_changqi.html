@@ -189,7 +189,7 @@
           <h1 class="ui header" style="font-family: fzdbs;">- 长期战斗，价格更优 -</h1>
           <p style="font-family: fzdbs; font-size: 18px;color: #B8A99A;">准备长期备考的小伙伴看过来</p>
           <button class="ui basic button" id="showdetail" onclick="showaaa()" style="font-family: fzdbs;">点击显示店铺评分对比～</button>
-          <div id="favouritesnumdata"></div>
+          <div id="favouritesnumdata" style="display: none;"><iframe title="" aria-label="Interactive line chart" id="datawrapper-chart-oQCtp" src="https://datawrapper.dwcdn.net/oQCtp/4/" scrolling="no" frameborder="0" style="border: none;" width="900" height="282"></iframe></div>
           <div id="goodcommentratiodata"></div>
         </div>
       </div> 
@@ -267,9 +267,20 @@
 </html>
 
 <script>
+window.showdata=0;
 
 function showaaa(){
-          document.getElementById('favouritesnumdata').innerHTML = '<iframe title=" " aria-label="Interactive line chart" id="datawrapper-chart-11AbA" src="https://datawrapper.dwcdn.net/11AbA/2/" scrolling="no" frameborder="0" style="border: none;" width="800" height="200"></iframe>';
-          document.getElementById('goodcommentratiodata').innerHTML='<iframe title=" " aria-label="Interactive line chart" id="datawrapper-chart-11AbA" src="https://datawrapper.dwcdn.net/11AbA/2/" scrolling="no" frameborder="0" style="border: none;" width="800" height="200"></iframe>';
-        };
+  if(window.showdata==1){
+    document.getElementById('favouritesnumdata').style.display="none";
+    window.showdata=0;
+    return;
+  }
+  if(window.showdata==0){
+    document.getElementById('favouritesnumdata').style.display="";
+    window.showdata=1;
+    return;
+  }
+
+         // document.getElementById('goodcommentratiodata').innerHTML='<iframe title=" " aria-label="Interactive line chart" id="datawrapper-chart-11AbA" src="https://datawrapper.dwcdn.net/11AbA/2/" scrolling="no" frameborder="0" style="border: none;" width="800" height="200"></iframe>';
+ };
 </script>
